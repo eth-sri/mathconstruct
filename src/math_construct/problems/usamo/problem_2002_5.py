@@ -13,12 +13,10 @@ def is_trivial(a, b):
     """Checks if there is some trivial length 3 or 4 solution."""
     for c in range(1, a*b):
         if check_consecutive(a, c) and check_consecutive(c, b):
-            print("found 3: ", a, c, b)
             return True
     for c1 in range(1, 2*max(a, b)):
         for c2 in range(1, 2*max(a, b)):
             if check_consecutive(a, c1) and check_consecutive(c1, c2) and check_consecutive(c2, b):
-                print("found 4: ", a, c1, c2, b)
                 return True
     return False
 

@@ -1,0 +1,25 @@
+test_run: False
+output_dir: "cot-checker-main"
+models:
+#  - "openai:o1"
+#  - "openai:o1-mini"
+#  - "openai:o3-mini"
+  - "openai:o3-mini--high"
+# - "together:deepseek-ai/DeepSeek-R1"
+#  - "together:deepseek-ai/DeepSeek-R1-Distill-Llama-70B"
+solver:
+  #system_prompt: "You are a math expert." 
+  parse_feedback: True
+  check_feedback: True
+  error_string: "The solution parser encountered the following error:\n{error}\nPlease format your reply accurately."
+  max_feedback_rounds: 2
+  formatting_prefix: "Format your reply as follows:"
+inference:
+  temperature: 1.0
+  top_p: 0.9
+  max_tokens: 64000
+  concurrent_requests: 10
+  timeout: 2000
+problems:
+  - ".*"
+n_variations: 4

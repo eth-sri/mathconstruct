@@ -5,7 +5,7 @@ models:
  - "openai:o1-mini"
  - "openai:o3-mini"
  - "openai:o3-mini--high"
- - "openrouter:deepseek/deepseek-r1"
+ - "together:deepseek-ai/DeepSeek-R1"
  - "together:deepseek-ai/DeepSeek-R1-Distill-Llama-70B"
 solver:
   #system_prompt: "You are a math expert." 

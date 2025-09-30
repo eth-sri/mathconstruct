@@ -71,7 +71,7 @@ class Problem2016C4(Problem):
                         diag = get_diagonal(start[0], start[1], di, dj)
                         if len(diag)%3 == 0:
                             if diag.count("I") != len(diag)//3 or diag.count("M") != len(diag)//3 or diag.count("O") != len(diag)//3:
-                                return False, f"Diagonal starting at ({start[0]}, {start[1]}) with (+1, +1) direction does not have equal number of I, M and O", CheckerTag.INCORRECT_SOLUTION
+                                return False, f"Diagonal starting at ({start[0]}, {start[1]}) with ({di}, {dj}) direction does not have equal number of I, M and O", CheckerTag.INCORRECT_SOLUTION
         return True, "OK", CheckerTag.CORRECT
 
     @staticmethod

@@ -25,6 +25,7 @@ class SolverConfig(PBMwODP, extra="forbid"):  # type: ignore
     formatting_prefix: str = Field("Format your reply as follows:", description="Formatting prefix for the model")
     error_string: str = Field(None, description="Error string for the model")
     give_solution: bool = Field(False, description="Give solution to the model")
+    batch_size: int = Field(10, description="Batch size for processing")
 
     # code specific
     image_name: str = Field("mathconstruct-sandbox", description="Docker image name")

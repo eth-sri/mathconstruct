@@ -3,16 +3,16 @@
         "name": "logs/code-brute-force-infer",
         "model_results": {
             "claude-3-5-haiku-latest": {
-                "avg_acc": 0.09325396825396826,
-                "avg_cost": 7.5478416,
-                "all_correct": 0.023809523809523808,
+                "avg_acc": 0.11363636363636363,
+                "avg_cost": 7.248664,
+                "all_correct": 0.03305785123966942,
                 "error_types": {
-                    "CheckerTag.INCORRECT_SOLUTION": 0.6402116402116402,
-                    "CheckerTag.INCORRECT_FORMAT": 0.09325396825396827,
-                    "CheckerTag.INCORRECT_LENGTH": 0.16534391534391535,
-                    "CheckerTag.CORRECT": 0.09325396825396827,
-                    "Error parsing solution": 0.003968253968253969,
-                    "Model says no solution exists": 0.003968253968253969
+                    "CheckerTag.INCORRECT_SOLUTION": 0.6398071625344353,
+                    "CheckerTag.INCORRECT_FORMAT": 0.08471074380165289,
+                    "CheckerTag.INCORRECT_LENGTH": 0.15358126721763085,
+                    "CheckerTag.CORRECT": 0.11363636363636363,
+                    "Error parsing solution": 0.004132231404958678,
+                    "Model says no solution exists": 0.004132231404958678
                 },
                 "detailed_results": [
                     {
@@ -53,42 +53,6 @@
                     },
                     {
                         "correct": false,
-                        "error": "CheckerTag.INCORRECT_FORMAT",
-                        "cost": 0.0122264,
-                        "problem_name": "bmo-shortlist-2014-c1",
-                        "variation_parameters": {
-                            "N": 56
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_FORMAT",
-                        "cost": 0.0071488,
-                        "problem_name": "bmo-shortlist-2014-c1",
-                        "variation_parameters": {
-                            "N": 128
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
-                        "cost": 0.0167872,
-                        "problem_name": "bmo-shortlist-2014-c1",
-                        "variation_parameters": {
-                            "N": 64
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.0037928000000000007,
-                        "problem_name": "bmo-shortlist-2014-c1",
-                        "variation_parameters": {
-                            "N": 44
-                        }
-                    },
-                    {
-                        "correct": false,
                         "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.0170296,
                         "problem_name": "bmo-shortlist-2015-n7",
@@ -125,42 +89,6 @@
                     },
                     {
                         "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.023554400000000003,
-                        "problem_name": "bmo-shortlist-2018-c1",
-                        "variation_parameters": {
-                            "N": 11
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.018814400000000002,
-                        "problem_name": "bmo-shortlist-2018-c1",
-                        "variation_parameters": {
-                            "N": 15
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_FORMAT",
-                        "cost": 0.0272168,
-                        "problem_name": "bmo-shortlist-2018-c1",
-                        "variation_parameters": {
-                            "N": 9
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_FORMAT",
-                        "cost": 0.0431016,
-                        "problem_name": "bmo-shortlist-2018-c1",
-                        "variation_parameters": {
-                            "N": 17
-                        }
-                    },
-                    {
-                        "correct": false,
                         "error": "CheckerTag.INCORRECT_FORMAT",
                         "cost": 0.0167168,
                         "problem_name": "bmo-shortlist-2019-c1",
@@ -193,42 +121,6 @@
                         "problem_name": "bmo-shortlist-2019-c1",
                         "variation_parameters": {
                             "N": 12
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.013636000000000002,
-                        "problem_name": "bmo-shortlist-2019-c2",
-                        "variation_parameters": {
-                            "N": 45
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.0144792,
-                        "problem_name": "bmo-shortlist-2019-c2",
-                        "variation_parameters": {
-                            "N": 51
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.011518400000000002,
-                        "problem_name": "bmo-shortlist-2019-c2",
-                        "variation_parameters": {
-                            "N": 47
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.0036616,
-                        "problem_name": "bmo-shortlist-2019-c2",
-                        "variation_parameters": {
-                            "N": 48
                         }
                     },
                     {
@@ -857,8 +749,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_FORMAT",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.011867200000000001,
                         "problem_name": "croatian-2022-1",
                         "variation_parameters": {
@@ -2579,42 +2471,6 @@
                     },
                     {
                         "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
-                        "cost": 0.008468,
-                        "problem_name": "jbmo-shortlist-2018-a7",
-                        "variation_parameters": {
-                            "N": 2018
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
-                        "cost": 0.0044992,
-                        "problem_name": "jbmo-shortlist-2018-a7",
-                        "variation_parameters": {
-                            "N": 168
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
-                        "cost": 0.0038087999999999998,
-                        "problem_name": "jbmo-shortlist-2018-a7",
-                        "variation_parameters": {
-                            "N": 80
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
-                        "cost": 0.0029568,
-                        "problem_name": "jbmo-shortlist-2018-a7",
-                        "variation_parameters": {
-                            "N": 48
-                        }
-                    },
-                    {
-                        "correct": false,
                         "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.012527199999999999,
                         "problem_name": "jbmo-shortlist-2018-n4",
@@ -2803,42 +2659,6 @@
                         "variation_parameters": {
                             "N": 19,
                             "M": 10
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.0157752,
-                        "problem_name": "jbmo-shortlist-2023-c2",
-                        "variation_parameters": {
-                            "N": 25
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
-                        "cost": 0.033916800000000004,
-                        "problem_name": "jbmo-shortlist-2023-c2",
-                        "variation_parameters": {
-                            "N": 44
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_FORMAT",
-                        "cost": 0.0168568,
-                        "problem_name": "jbmo-shortlist-2023-c2",
-                        "variation_parameters": {
-                            "N": 28
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.016958400000000002,
-                        "problem_name": "jbmo-shortlist-2023-c2",
-                        "variation_parameters": {
-                            "N": 23
                         }
                     },
                     {
@@ -3241,8 +3061,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.00434,
                         "problem_name": "misc-balticway-2005-19",
                         "variation_parameters": {
@@ -3251,8 +3071,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.010167200000000001,
                         "problem_name": "misc-balticway-2005-19",
                         "variation_parameters": {
@@ -3261,8 +3081,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.0064912,
                         "problem_name": "misc-balticway-2005-19",
                         "variation_parameters": {
@@ -3271,8 +3091,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.0055448,
                         "problem_name": "misc-balticway-2005-19",
                         "variation_parameters": {
@@ -3340,7 +3160,7 @@
                     },
                     {
                         "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.0167536,
                         "problem_name": "putnam-2009-b6",
                         "variation_parameters": {
@@ -3359,8 +3179,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.014440800000000002,
                         "problem_name": "putnam-2009-b6",
                         "variation_parameters": {
@@ -3369,8 +3189,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.0167096,
                         "problem_name": "putnam-2009-b6",
                         "variation_parameters": {
@@ -3691,8 +3511,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.007876000000000001,
                         "problem_name": "swiss-2020-1-selection",
                         "variation_parameters": {
@@ -4514,15 +4334,15 @@
                 ]
             },
             "gpt-4o": {
-                "avg_acc": 0.1078042328042328,
-                "avg_cost": 15.1391175,
-                "all_correct": 0.031746031746031744,
+                "avg_acc": 0.12878787878787878,
+                "avg_cost": 14.53537,
+                "all_correct": 0.04132231404958678,
                 "error_types": {
-                    "CheckerTag.INCORRECT_FORMAT": 0.06944444444444445,
-                    "CheckerTag.INCORRECT_SOLUTION": 0.6858465608465609,
-                    "CheckerTag.INCORRECT_LENGTH": 0.13095238095238096,
-                    "CheckerTag.CORRECT": 0.1078042328042328,
-                    "Error parsing solution": 0.005952380952380952
+                    "CheckerTag.INCORRECT_FORMAT": 0.06611570247933884,
+                    "CheckerTag.INCORRECT_SOLUTION": 0.6811294765840221,
+                    "CheckerTag.INCORRECT_LENGTH": 0.11776859504132231,
+                    "CheckerTag.CORRECT": 0.12878787878787878,
+                    "Error parsing solution": 0.006198347107438017
                 },
                 "detailed_results": [
                     {
@@ -4559,42 +4379,6 @@
                         "problem_name": "bmo-shortlist-2008-n1",
                         "variation_parameters": {
                             "a": 9
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_FORMAT",
-                        "cost": 0.011314999999999999,
-                        "problem_name": "bmo-shortlist-2014-c1",
-                        "variation_parameters": {
-                            "N": 56
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
-                        "cost": 0.0109975,
-                        "problem_name": "bmo-shortlist-2014-c1",
-                        "variation_parameters": {
-                            "N": 128
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_FORMAT",
-                        "cost": 0.03216,
-                        "problem_name": "bmo-shortlist-2014-c1",
-                        "variation_parameters": {
-                            "N": 64
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_FORMAT",
-                        "cost": 0.00805,
-                        "problem_name": "bmo-shortlist-2014-c1",
-                        "variation_parameters": {
-                            "N": 44
                         }
                     },
                     {
@@ -4636,42 +4420,6 @@
                     {
                         "correct": false,
                         "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.026529999999999998,
-                        "problem_name": "bmo-shortlist-2018-c1",
-                        "variation_parameters": {
-                            "N": 11
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.0220025,
-                        "problem_name": "bmo-shortlist-2018-c1",
-                        "variation_parameters": {
-                            "N": 15
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_FORMAT",
-                        "cost": 0.057580000000000006,
-                        "problem_name": "bmo-shortlist-2018-c1",
-                        "variation_parameters": {
-                            "N": 9
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.0621375,
-                        "problem_name": "bmo-shortlist-2018-c1",
-                        "variation_parameters": {
-                            "N": 17
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.0368975,
                         "problem_name": "bmo-shortlist-2019-c1",
                         "variation_parameters": {
@@ -4703,42 +4451,6 @@
                         "problem_name": "bmo-shortlist-2019-c1",
                         "variation_parameters": {
                             "N": 12
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.0115,
-                        "problem_name": "bmo-shortlist-2019-c2",
-                        "variation_parameters": {
-                            "N": 45
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.0081975,
-                        "problem_name": "bmo-shortlist-2019-c2",
-                        "variation_parameters": {
-                            "N": 51
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.0106325,
-                        "problem_name": "bmo-shortlist-2019-c2",
-                        "variation_parameters": {
-                            "N": 47
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.010727500000000001,
-                        "problem_name": "bmo-shortlist-2019-c2",
-                        "variation_parameters": {
-                            "N": 48
                         }
                     },
                     {
@@ -7089,42 +6801,6 @@
                     },
                     {
                         "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
-                        "cost": 0.0112825,
-                        "problem_name": "jbmo-shortlist-2018-a7",
-                        "variation_parameters": {
-                            "N": 2018
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
-                        "cost": 0.039392500000000004,
-                        "problem_name": "jbmo-shortlist-2018-a7",
-                        "variation_parameters": {
-                            "N": 168
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
-                        "cost": 0.032350000000000004,
-                        "problem_name": "jbmo-shortlist-2018-a7",
-                        "variation_parameters": {
-                            "N": 80
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
-                        "cost": 0.0177775,
-                        "problem_name": "jbmo-shortlist-2018-a7",
-                        "variation_parameters": {
-                            "N": 48
-                        }
-                    },
-                    {
-                        "correct": false,
                         "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.021597500000000002,
                         "problem_name": "jbmo-shortlist-2018-n4",
@@ -7313,42 +6989,6 @@
                         "variation_parameters": {
                             "N": 19,
                             "M": 10
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.07526,
-                        "problem_name": "jbmo-shortlist-2023-c2",
-                        "variation_parameters": {
-                            "N": 25
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.051275,
-                        "problem_name": "jbmo-shortlist-2023-c2",
-                        "variation_parameters": {
-                            "N": 44
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_FORMAT",
-                        "cost": 0.0434075,
-                        "problem_name": "jbmo-shortlist-2023-c2",
-                        "variation_parameters": {
-                            "N": 28
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.0611725,
-                        "problem_name": "jbmo-shortlist-2023-c2",
-                        "variation_parameters": {
-                            "N": 23
                         }
                     },
                     {
@@ -7751,8 +7391,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.01277,
                         "problem_name": "misc-balticway-2005-19",
                         "variation_parameters": {
@@ -7761,8 +7401,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.0096825,
                         "problem_name": "misc-balticway-2005-19",
                         "variation_parameters": {
@@ -7771,8 +7411,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.0072775,
                         "problem_name": "misc-balticway-2005-19",
                         "variation_parameters": {
@@ -7781,8 +7421,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.0083225,
                         "problem_name": "misc-balticway-2005-19",
                         "variation_parameters": {
@@ -7850,7 +7490,7 @@
                     },
                     {
                         "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "error": "CheckerTag.INCORRECT_FORMAT",
                         "cost": 0.016092500000000003,
                         "problem_name": "putnam-2009-b6",
                         "variation_parameters": {
@@ -7860,7 +7500,7 @@
                     },
                     {
                         "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "error": "CheckerTag.INCORRECT_FORMAT",
                         "cost": 0.013104999999999999,
                         "problem_name": "putnam-2009-b6",
                         "variation_parameters": {
@@ -7869,8 +7509,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.01369,
                         "problem_name": "putnam-2009-b6",
                         "variation_parameters": {
@@ -7879,8 +7519,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.011997500000000001,
                         "problem_name": "putnam-2009-b6",
                         "variation_parameters": {
@@ -8210,8 +7850,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.023559999999999998,
                         "problem_name": "swiss-2020-1-selection",
                         "variation_parameters": {
@@ -8219,8 +7859,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.0390725,
                         "problem_name": "swiss-2020-1-selection",
                         "variation_parameters": {
@@ -9024,15 +8664,15 @@
                 ]
             },
             "gpt-4o-mini": {
-                "avg_acc": 0.08597883597883599,
-                "avg_cost": 0.9422031,
-                "all_correct": 0.031746031746031744,
+                "avg_acc": 0.10812672176308541,
+                "avg_cost": 0.9068613,
+                "all_correct": 0.04132231404958678,
                 "error_types": {
-                    "CheckerTag.INCORRECT_SOLUTION": 0.6593915343915344,
-                    "CheckerTag.CORRECT": 0.08597883597883596,
-                    "CheckerTag.INCORRECT_FORMAT": 0.0701058201058201,
-                    "CheckerTag.INCORRECT_LENGTH": 0.17857142857142855,
-                    "Model says no solution exists": 0.005952380952380952
+                    "CheckerTag.INCORRECT_SOLUTION": 0.6577134986225895,
+                    "CheckerTag.CORRECT": 0.10812672176308538,
+                    "CheckerTag.INCORRECT_LENGTH": 0.16528925619834708,
+                    "CheckerTag.INCORRECT_FORMAT": 0.06267217630853994,
+                    "Model says no solution exists": 0.006198347107438016
                 },
                 "detailed_results": [
                     {
@@ -9073,42 +8713,6 @@
                     },
                     {
                         "correct": false,
-                        "error": "CheckerTag.INCORRECT_FORMAT",
-                        "cost": 0.0009895499999999998,
-                        "problem_name": "bmo-shortlist-2014-c1",
-                        "variation_parameters": {
-                            "N": 56
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
-                        "cost": 0.0030117,
-                        "problem_name": "bmo-shortlist-2014-c1",
-                        "variation_parameters": {
-                            "N": 128
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
-                        "cost": 0.0004821,
-                        "problem_name": "bmo-shortlist-2014-c1",
-                        "variation_parameters": {
-                            "N": 64
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_FORMAT",
-                        "cost": 0.0006261,
-                        "problem_name": "bmo-shortlist-2014-c1",
-                        "variation_parameters": {
-                            "N": 44
-                        }
-                    },
-                    {
-                        "correct": false,
                         "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.00180285,
                         "problem_name": "bmo-shortlist-2015-n7",
@@ -9145,42 +8749,6 @@
                     },
                     {
                         "correct": false,
-                        "error": "CheckerTag.INCORRECT_FORMAT",
-                        "cost": 0.0046275,
-                        "problem_name": "bmo-shortlist-2018-c1",
-                        "variation_parameters": {
-                            "N": 11
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
-                        "cost": 0.0065190000000000005,
-                        "problem_name": "bmo-shortlist-2018-c1",
-                        "variation_parameters": {
-                            "N": 15
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_FORMAT",
-                        "cost": 0.00330855,
-                        "problem_name": "bmo-shortlist-2018-c1",
-                        "variation_parameters": {
-                            "N": 9
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.0014510999999999999,
-                        "problem_name": "bmo-shortlist-2018-c1",
-                        "variation_parameters": {
-                            "N": 17
-                        }
-                    },
-                    {
-                        "correct": false,
                         "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.0008982,
                         "problem_name": "bmo-shortlist-2019-c1",
@@ -9213,42 +8781,6 @@
                         "problem_name": "bmo-shortlist-2019-c1",
                         "variation_parameters": {
                             "N": 12
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.0006122999999999999,
-                        "problem_name": "bmo-shortlist-2019-c2",
-                        "variation_parameters": {
-                            "N": 45
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.0009187499999999999,
-                        "problem_name": "bmo-shortlist-2019-c2",
-                        "variation_parameters": {
-                            "N": 51
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.0006627,
-                        "problem_name": "bmo-shortlist-2019-c2",
-                        "variation_parameters": {
-                            "N": 47
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.0007423499999999999,
-                        "problem_name": "bmo-shortlist-2019-c2",
-                        "variation_parameters": {
-                            "N": 48
                         }
                     },
                     {
@@ -11599,42 +11131,6 @@
                     },
                     {
                         "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
-                        "cost": 0.00084165,
-                        "problem_name": "jbmo-shortlist-2018-a7",
-                        "variation_parameters": {
-                            "N": 2018
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
-                        "cost": 0.00059205,
-                        "problem_name": "jbmo-shortlist-2018-a7",
-                        "variation_parameters": {
-                            "N": 168
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
-                        "cost": 0.00056055,
-                        "problem_name": "jbmo-shortlist-2018-a7",
-                        "variation_parameters": {
-                            "N": 80
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
-                        "cost": 0.0005668499999999999,
-                        "problem_name": "jbmo-shortlist-2018-a7",
-                        "variation_parameters": {
-                            "N": 48
-                        }
-                    },
-                    {
-                        "correct": false,
                         "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.0012201,
                         "problem_name": "jbmo-shortlist-2018-n4",
@@ -11823,42 +11319,6 @@
                         "variation_parameters": {
                             "N": 19,
                             "M": 10
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.0008455499999999999,
-                        "problem_name": "jbmo-shortlist-2023-c2",
-                        "variation_parameters": {
-                            "N": 25
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
-                        "cost": 0.0033477,
-                        "problem_name": "jbmo-shortlist-2023-c2",
-                        "variation_parameters": {
-                            "N": 44
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.0027800999999999998,
-                        "problem_name": "jbmo-shortlist-2023-c2",
-                        "variation_parameters": {
-                            "N": 28
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.00185565,
-                        "problem_name": "jbmo-shortlist-2023-c2",
-                        "variation_parameters": {
-                            "N": 23
                         }
                     },
                     {
@@ -12261,8 +11721,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.0007379999999999999,
                         "problem_name": "misc-balticway-2005-19",
                         "variation_parameters": {
@@ -12271,8 +11731,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.00065835,
                         "problem_name": "misc-balticway-2005-19",
                         "variation_parameters": {
@@ -12281,8 +11741,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.00056295,
                         "problem_name": "misc-balticway-2005-19",
                         "variation_parameters": {
@@ -12291,8 +11751,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.0003978,
                         "problem_name": "misc-balticway-2005-19",
                         "variation_parameters": {
@@ -12359,8 +11819,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.0009713999999999999,
                         "problem_name": "putnam-2009-b6",
                         "variation_parameters": {
@@ -12370,7 +11830,7 @@
                     },
                     {
                         "correct": false,
-                        "error": "CheckerTag.INCORRECT_FORMAT",
+                        "error": "CheckerTag.INCORRECT_LENGTH",
                         "cost": 0.0007400999999999998,
                         "problem_name": "putnam-2009-b6",
                         "variation_parameters": {
@@ -12379,8 +11839,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.00284445,
                         "problem_name": "putnam-2009-b6",
                         "variation_parameters": {
@@ -12389,8 +11849,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.0020142,
                         "problem_name": "putnam-2009-b6",
                         "variation_parameters": {
@@ -12711,8 +12171,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.00048315,
                         "problem_name": "swiss-2020-1-selection",
                         "variation_parameters": {
@@ -12729,8 +12189,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.0026265,
                         "problem_name": "swiss-2020-1-selection",
                         "variation_parameters": {
@@ -13534,16 +12994,16 @@
                 ]
             },
             "claude-3-5-sonnet-latest": {
-                "avg_acc": 0.16666666666666666,
-                "avg_cost": 26.164401,
-                "all_correct": 0.05555555555555555,
+                "avg_acc": 0.1921487603305785,
+                "avg_cost": 25.224921,
+                "all_correct": 0.06611570247933884,
                 "error_types": {
-                    "CheckerTag.INCORRECT_SOLUTION": 0.6124338624338624,
-                    "CheckerTag.INCORRECT_FORMAT": 0.0701058201058201,
-                    "CheckerTag.INCORRECT_LENGTH": 0.1388888888888889,
-                    "Error parsing solution": 0.00992063492063492,
-                    "CheckerTag.CORRECT": 0.16666666666666666,
-                    "Model says no solution exists": 0.001984126984126984
+                    "CheckerTag.INCORRECT_SOLUTION": 0.6026170798898072,
+                    "Error parsing solution": 0.008264462809917356,
+                    "CheckerTag.CORRECT": 0.1921487603305785,
+                    "CheckerTag.INCORRECT_LENGTH": 0.12603305785123967,
+                    "CheckerTag.INCORRECT_FORMAT": 0.06887052341597795,
+                    "Model says no solution exists": 0.002066115702479339
                 },
                 "detailed_results": [
                     {
@@ -13580,42 +13040,6 @@
                         "problem_name": "bmo-shortlist-2008-n1",
                         "variation_parameters": {
                             "a": 9
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_FORMAT",
-                        "cost": 0.047913,
-                        "problem_name": "bmo-shortlist-2014-c1",
-                        "variation_parameters": {
-                            "N": 56
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
-                        "cost": 0.061967999999999995,
-                        "problem_name": "bmo-shortlist-2014-c1",
-                        "variation_parameters": {
-                            "N": 128
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.037428,
-                        "problem_name": "bmo-shortlist-2014-c1",
-                        "variation_parameters": {
-                            "N": 64
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.013443,
-                        "problem_name": "bmo-shortlist-2014-c1",
-                        "variation_parameters": {
-                            "N": 44
                         }
                     },
                     {
@@ -13657,42 +13081,6 @@
                     {
                         "correct": false,
                         "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.034683000000000005,
-                        "problem_name": "bmo-shortlist-2018-c1",
-                        "variation_parameters": {
-                            "N": 11
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_FORMAT",
-                        "cost": 0.111858,
-                        "problem_name": "bmo-shortlist-2018-c1",
-                        "variation_parameters": {
-                            "N": 15
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.06875099999999999,
-                        "problem_name": "bmo-shortlist-2018-c1",
-                        "variation_parameters": {
-                            "N": 9
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_FORMAT",
-                        "cost": 0.11865600000000001,
-                        "problem_name": "bmo-shortlist-2018-c1",
-                        "variation_parameters": {
-                            "N": 17
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.0444,
                         "problem_name": "bmo-shortlist-2019-c1",
                         "variation_parameters": {
@@ -13724,42 +13112,6 @@
                         "problem_name": "bmo-shortlist-2019-c1",
                         "variation_parameters": {
                             "N": 12
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.013977,
-                        "problem_name": "bmo-shortlist-2019-c2",
-                        "variation_parameters": {
-                            "N": 45
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.013680000000000001,
-                        "problem_name": "bmo-shortlist-2019-c2",
-                        "variation_parameters": {
-                            "N": 51
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.013131,
-                        "problem_name": "bmo-shortlist-2019-c2",
-                        "variation_parameters": {
-                            "N": 47
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.012267,
-                        "problem_name": "bmo-shortlist-2019-c2",
-                        "variation_parameters": {
-                            "N": 48
                         }
                     },
                     {
@@ -16110,42 +15462,6 @@
                     },
                     {
                         "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
-                        "cost": 0.014127,
-                        "problem_name": "jbmo-shortlist-2018-a7",
-                        "variation_parameters": {
-                            "N": 2018
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
-                        "cost": 0.013731,
-                        "problem_name": "jbmo-shortlist-2018-a7",
-                        "variation_parameters": {
-                            "N": 168
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
-                        "cost": 0.011892,
-                        "problem_name": "jbmo-shortlist-2018-a7",
-                        "variation_parameters": {
-                            "N": 80
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
-                        "cost": 0.02694,
-                        "problem_name": "jbmo-shortlist-2018-a7",
-                        "variation_parameters": {
-                            "N": 48
-                        }
-                    },
-                    {
-                        "correct": false,
                         "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.025752,
                         "problem_name": "jbmo-shortlist-2018-n4",
@@ -16334,42 +15650,6 @@
                         "variation_parameters": {
                             "N": 19,
                             "M": 10
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.081723,
-                        "problem_name": "jbmo-shortlist-2023-c2",
-                        "variation_parameters": {
-                            "N": 25
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.084801,
-                        "problem_name": "jbmo-shortlist-2023-c2",
-                        "variation_parameters": {
-                            "N": 44
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
-                        "cost": 0.06267299999999999,
-                        "problem_name": "jbmo-shortlist-2023-c2",
-                        "variation_parameters": {
-                            "N": 28
-                        }
-                    },
-                    {
-                        "correct": false,
-                        "error": "Error parsing solution",
-                        "cost": 0.095838,
-                        "problem_name": "jbmo-shortlist-2023-c2",
-                        "variation_parameters": {
-                            "N": 23
                         }
                     },
                     {
@@ -16772,8 +16052,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.016161000000000002,
                         "problem_name": "misc-balticway-2005-19",
                         "variation_parameters": {
@@ -16782,8 +16062,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.013038,
                         "problem_name": "misc-balticway-2005-19",
                         "variation_parameters": {
@@ -16792,8 +16072,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.01473,
                         "problem_name": "misc-balticway-2005-19",
                         "variation_parameters": {
@@ -16802,8 +16082,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.012816000000000001,
                         "problem_name": "misc-balticway-2005-19",
                         "variation_parameters": {
@@ -16870,8 +16150,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.047487,
                         "problem_name": "putnam-2009-b6",
                         "variation_parameters": {
@@ -16881,7 +16161,7 @@
                     },
                     {
                         "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "error": "CheckerTag.INCORRECT_FORMAT",
                         "cost": 0.030426,
                         "problem_name": "putnam-2009-b6",
                         "variation_parameters": {
@@ -16890,8 +16170,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.021147,
                         "problem_name": "putnam-2009-b6",
                         "variation_parameters": {
@@ -16900,8 +16180,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.040365,
                         "problem_name": "putnam-2009-b6",
                         "variation_parameters": {
@@ -17231,8 +16511,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.069945,
                         "problem_name": "swiss-2020-1-selection",
                         "variation_parameters": {
@@ -17249,8 +16529,8 @@
                         }
                     },
                     {
-                        "correct": false,
-                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
                         "cost": 0.086211,
                         "problem_name": "swiss-2020-1-selection",
                         "variation_parameters": {

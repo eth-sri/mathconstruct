@@ -1,0 +1,21 @@
+test_run: False
+output_dir: "cot-parser-main"
+models:
+   - "openai:gpt-5--high"
+solver:
+  #system_prompt: "You are a math expert." 
+  parse_feedback: True
+  check_feedback: False
+  error_string: "The solution parser encountered the following error:\n{error}\nPlease format your reply accurately."
+  max_feedback_rounds: 2
+  formatting_prefix: "Format your reply as follows:"
+  batch_size: 32
+inference:
+  temperature: 1.0
+  top_p: 0.9
+  max_tokens: 128000
+  concurrent_requests: 32
+  timeout: 4000
+problems:
+  - ".*"
+n_variations:  4

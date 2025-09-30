@@ -104,16 +104,11 @@ class Problem_USAMO_2005_1(Problem):
 
     def get_brute_force_solution(self):
         num_divs = len(divisors(self.n))
-        print("bf: n=", self.n, "num_divs=", num_divs)
         d = list(range(1, num_divs))
         for it in range(100000):
-            if it%10000 == 0:
-                print(f"Iteration {it}")
             random.shuffle(d)
             if self.check_raw(d):
-                print(f"Found solution in {it} iterations")
                 return d
-        print("Failed to find solution")
         return d
 
 

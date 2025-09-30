@@ -11,16 +11,16 @@ from math_construct.templates import get_list_template
 
 def get_solution(n: int) -> list[Fraction]:
     if n == 4:
-        return [2, 2]
+        return [Fraction(2,1), Fraction(2,1)]
     if n == 7:
         return [Fraction(9, 2), Fraction(4, 3), Fraction(7, 6)]
     if isprime(n):
         a = [Fraction(n, 2), 4, Fraction(1, 2)]
         k = n - ((n+1)//2+4)
-        return a + [1] * k
+        return a + [Fraction(1,1)] * k
     ps = primefactors(n)
     p1, p2 = ps[0], n//ps[0]
-    return [p1, p2] + [1] * (n - p1 - p2)
+    return [Fraction(p1,1), Fraction(p2,1)] + [Fraction(1,1)] * (n - p1 - p2)
 
 class Problem_USAMO_2006_4(Problem):
     """2006 USAMO Problem 4"""

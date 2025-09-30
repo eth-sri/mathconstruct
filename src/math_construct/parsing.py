@@ -50,6 +50,9 @@ def normalize_string(s):
     # remove hline and vline
     s = s.replace(r"\hline", "")
     s = s.replace(r"\vline", "")
+    s = s.replace(r"\quad", " ")
+    s = s.replace("(1mm)", "")
+    s = s.replace(",\\,", ",")
     return strip(s)
 
 def remove_outer_brackets(s):
@@ -164,7 +167,11 @@ class ParsePrimitive(ParseObject):
                 numerator, denominator = sympy_expression.as_numer_denom()
                 if not isinstance(numerator, Integer) or not isinstance(denominator, Integer):
                     raise ValueError(f"Expected a primitive fraction, but got '{string}'")
-                return Fraction(int(numerator), int(denominator))
+                
+                fraction = Fraction(int(numerator), int(denominator))
+                if primitive_type != Fraction and fraction.denominator == 1:
+                    return fraction.numerator
+                return fraction
             return float_val
         except Exception as e:
             if "Expected a primitive fraction" in str(e):
@@ -244,7 +251,10 @@ class ParseFraction(ParseObject):
         parsed_numerator = ParsePrimitive.parse(numerator, primitive_type)
         parsed_denominator = ParsePrimitive.parse(denominator, primitive_type)
         try:
-            return Fraction(factor * parsed_numerator, parsed_denominator) # only possible if results are integers
+            fraction = Fraction(factor * parsed_numerator, parsed_denominator)
+            if primitive_type != Fraction and fraction.denominator == 1:
+                return fraction.numerator
+            return fraction
         except:
             return factor * parsed_numerator / parsed_denominator
     

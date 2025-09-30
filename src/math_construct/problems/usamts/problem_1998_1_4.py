@@ -49,7 +49,7 @@ class Problem_USAMTS_1998_1_4(Problem):
                     d3 = (solution[j][0] - solution[k][0]) ** 2 + (solution[j][1] - solution[k][1]) ** 2
                     if abs(d1-self.d**2) > 1e-3 and abs(d2-self.d**2) > 1e-3 and abs(d3-self.d**2) > 1e-3:
                         return False, f"Distance between points {i}, {j}, {k} is not {self.d}", CheckerTag.INCORRECT_SOLUTION
-        return True
+        return True, "OK", CheckerTag.CORRECT
 
     @staticmethod
     def generate() -> "Problem_USAMTS_1998_1_4":

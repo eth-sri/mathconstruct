@@ -1,0 +1,4339 @@
+[
+    {
+        "name": "logs/cot-checker-main",
+        "model_results": {
+            "o3-mini--high": {
+                "avg_acc": 0.6694214876033058,
+                "avg_cost": 100.005268,
+                "all_correct": 0.45454545454545453,
+                "error_types": {
+                    "CheckerTag.CORRECT": 0.6694214876033058,
+                    "CheckerTag.INCORRECT_SOLUTION": 0.23829201101928377,
+                    "CheckerTag.INCORRECT_LENGTH": 0.03925619834710744,
+                    "Model says no solution exists": 0.002066115702479339,
+                    "No Boxed Answer": 0.026170798898071623,
+                    "CheckerTag.INCORRECT_FORMAT": 0.010330578512396695,
+                    "Error parsing solution": 0.014462809917355372
+                },
+                "detailed_results": [
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.05419260000000001,
+                        "problem_name": "bmo-shortlist-2008-n1",
+                        "variation_parameters": {
+                            "a": 12
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.23795200000000005,
+                        "problem_name": "bmo-shortlist-2008-n1",
+                        "variation_parameters": {
+                            "a": 19
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.023502600000000002,
+                        "problem_name": "bmo-shortlist-2008-n1",
+                        "variation_parameters": {
+                            "a": 8
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.142615,
+                        "problem_name": "bmo-shortlist-2008-n1",
+                        "variation_parameters": {
+                            "a": 9
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.09830920000000001,
+                        "problem_name": "bmo-shortlist-2015-n7",
+                        "variation_parameters": {
+                            "N": 5
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1528604,
+                        "problem_name": "bmo-shortlist-2015-n7",
+                        "variation_parameters": {
+                            "N": 8
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.2402664,
+                        "problem_name": "bmo-shortlist-2015-n7",
+                        "variation_parameters": {
+                            "N": 3
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1974676,
+                        "problem_name": "bmo-shortlist-2015-n7",
+                        "variation_parameters": {
+                            "N": 6
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1050346,
+                        "problem_name": "bmo-shortlist-2019-c1",
+                        "variation_parameters": {
+                            "N": 100
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.134816,
+                        "problem_name": "bmo-shortlist-2019-c1",
+                        "variation_parameters": {
+                            "N": 54
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.27445110000000006,
+                        "problem_name": "bmo-shortlist-2019-c1",
+                        "variation_parameters": {
+                            "N": 22
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.16566990000000004,
+                        "problem_name": "bmo-shortlist-2019-c1",
+                        "variation_parameters": {
+                            "N": 12
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.028914600000000002,
+                        "problem_name": "bulgarian-ifym-2015-p7-d4-8th",
+                        "variation_parameters": {
+                            "n": 10000001
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.04213,
+                        "problem_name": "bulgarian-ifym-2015-p7-d4-8th",
+                        "variation_parameters": {
+                            "n": 131072
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.05863880000000001,
+                        "problem_name": "bulgarian-ifym-2015-p7-d4-8th",
+                        "variation_parameters": {
+                            "n": 512
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.09225480000000001,
+                        "problem_name": "bulgarian-ifym-2015-p7-d4-8th",
+                        "variation_parameters": {
+                            "n": 64
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "cost": 0.2665696,
+                        "problem_name": "bulgarian-ifym-2022-d1-p6-8th",
+                        "variation_parameters": {
+                            "N": 20,
+                            "n": 343
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.2669425,
+                        "problem_name": "bulgarian-ifym-2022-d1-p6-8th",
+                        "variation_parameters": {
+                            "N": 34,
+                            "n": 6321
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.1758152,
+                        "problem_name": "bulgarian-ifym-2022-d1-p6-8th",
+                        "variation_parameters": {
+                            "N": 28,
+                            "n": 2211
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.4163038,
+                        "problem_name": "bulgarian-ifym-2022-d1-p6-8th",
+                        "variation_parameters": {
+                            "N": 12,
+                            "n": 936
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.035697200000000005,
+                        "problem_name": "bulgarian-mo-r2-2021-8-4",
+                        "variation_parameters": {
+                            "k": 30
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.034817200000000006,
+                        "problem_name": "bulgarian-mo-r2-2021-8-4",
+                        "variation_parameters": {
+                            "k": 54
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0283228,
+                        "problem_name": "bulgarian-mo-r2-2021-8-4",
+                        "variation_parameters": {
+                            "k": 38
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0305844,
+                        "problem_name": "bulgarian-mo-r2-2021-8-4",
+                        "variation_parameters": {
+                            "k": 33
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "Model says no solution exists",
+                        "cost": 0.24846580000000004,
+                        "problem_name": "bulgarian-pms-10-4",
+                        "variation_parameters": {
+                            "N": 15,
+                            "e": 43
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.5921245,
+                        "problem_name": "bulgarian-pms-10-4",
+                        "variation_parameters": {
+                            "N": 16,
+                            "e": 83
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0474782,
+                        "problem_name": "bulgarian-pms-10-4",
+                        "variation_parameters": {
+                            "N": 12,
+                            "e": 66
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.07749610000000001,
+                        "problem_name": "bulgarian-pms-10-4",
+                        "variation_parameters": {
+                            "N": 10,
+                            "e": 32
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.11790790000000001,
+                        "problem_name": "bulgarian-pms-2008-8-3",
+                        "variation_parameters": {
+                            "N": 5
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1451307,
+                        "problem_name": "bulgarian-pms-2008-8-3",
+                        "variation_parameters": {
+                            "N": 6
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.11704,
+                        "problem_name": "bulgarian-pms-2008-8-3",
+                        "variation_parameters": {
+                            "N": 4
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.055379500000000005,
+                        "problem_name": "bulgarian-pms-2008-8-3",
+                        "variation_parameters": {
+                            "N": 3
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1303599,
+                        "problem_name": "bulgarian-pms-2021-10-3",
+                        "variation_parameters": {
+                            "N": 15
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0793056,
+                        "problem_name": "bulgarian-pms-2021-10-3",
+                        "variation_parameters": {
+                            "N": 13
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.04941310000000001,
+                        "problem_name": "bulgarian-pms-2021-10-3",
+                        "variation_parameters": {
+                            "N": 9
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0283107,
+                        "problem_name": "bulgarian-pms-2021-10-3",
+                        "variation_parameters": {
+                            "N": 7
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.05228300000000001,
+                        "problem_name": "bulgarian-pms-2022-10-p3",
+                        "variation_parameters": {
+                            "N": 20
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0933042,
+                        "problem_name": "bulgarian-pms-2022-10-p3",
+                        "variation_parameters": {
+                            "N": 59
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.06873019999999999,
+                        "problem_name": "bulgarian-pms-2022-10-p3",
+                        "variation_parameters": {
+                            "N": 27
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.04132260000000001,
+                        "problem_name": "bulgarian-pms-2022-10-p3",
+                        "variation_parameters": {
+                            "N": 17
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0338723,
+                        "problem_name": "bxmo-2011-1",
+                        "variation_parameters": {
+                            "k_squared": 1,
+                            "l": 3,
+                            "max_val": 14,
+                            "k": 1
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.3734808,
+                        "problem_name": "bxmo-2011-1",
+                        "variation_parameters": {
+                            "k_squared": 49,
+                            "l": 8,
+                            "max_val": 2034,
+                            "k": 7
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.059867500000000004,
+                        "problem_name": "bxmo-2011-1",
+                        "variation_parameters": {
+                            "k_squared": 9,
+                            "l": 3,
+                            "max_val": 26,
+                            "k": 3
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.6417818000000001,
+                        "problem_name": "bxmo-2011-1",
+                        "variation_parameters": {
+                            "k_squared": 16,
+                            "l": 10,
+                            "max_val": 8184,
+                            "k": 4
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.018335900000000002,
+                        "problem_name": "bxmo-2015-4",
+                        "variation_parameters": {
+                            "n": 15
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0182743,
+                        "problem_name": "bxmo-2015-4",
+                        "variation_parameters": {
+                            "n": 17
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0156915,
+                        "problem_name": "bxmo-2015-4",
+                        "variation_parameters": {
+                            "n": 9
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0114103,
+                        "problem_name": "bxmo-2015-4",
+                        "variation_parameters": {
+                            "n": 6
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "No Boxed Answer",
+                        "cost": 0.8461035,
+                        "problem_name": "bxmo-2019-2",
+                        "variation_parameters": {
+                            "k": 4,
+                            "n": 9
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.8256369000000001,
+                        "problem_name": "bxmo-2019-2",
+                        "variation_parameters": {
+                            "k": 8,
+                            "n": 17
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1262998,
+                        "problem_name": "bxmo-2019-2",
+                        "variation_parameters": {
+                            "k": 2,
+                            "n": 5
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "No Boxed Answer",
+                        "cost": 0.8461035,
+                        "problem_name": "bxmo-2019-2",
+                        "variation_parameters": {
+                            "k": 5,
+                            "n": 11
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.4360389,
+                        "problem_name": "bxmo-2020-4",
+                        "variation_parameters": {
+                            "n": 60
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.33121220000000007,
+                        "problem_name": "bxmo-2020-4",
+                        "variation_parameters": {
+                            "n": 108
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.2825867,
+                        "problem_name": "bxmo-2020-4",
+                        "variation_parameters": {
+                            "n": 76
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.4284962000000001,
+                        "problem_name": "bxmo-2020-4",
+                        "variation_parameters": {
+                            "n": 66
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.3269112,
+                        "problem_name": "bxmo-2021-2",
+                        "variation_parameters": {
+                            "threen_1": 10,
+                            "n": 7
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.10702120000000001,
+                        "problem_name": "bxmo-2021-2",
+                        "variation_parameters": {
+                            "threen_1": 19,
+                            "n": 13
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.19849830000000002,
+                        "problem_name": "bxmo-2021-2",
+                        "variation_parameters": {
+                            "threen_1": 13,
+                            "n": 9
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.21562640000000002,
+                        "problem_name": "bxmo-2021-2",
+                        "variation_parameters": {
+                            "threen_1": 16,
+                            "n": 11
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.19852580000000003,
+                        "problem_name": "croatian-2013-4",
+                        "variation_parameters": {
+                            "k": 10
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.22957550000000004,
+                        "problem_name": "croatian-2013-4",
+                        "variation_parameters": {
+                            "k": 13
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.3957085,
+                        "problem_name": "croatian-2013-4",
+                        "variation_parameters": {
+                            "k": 9
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.6549378,
+                        "problem_name": "croatian-2013-4",
+                        "variation_parameters": {
+                            "k": 7
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0730389,
+                        "problem_name": "croatian-2014-2",
+                        "variation_parameters": {
+                            "M": 4,
+                            "N": 9
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.021765700000000002,
+                        "problem_name": "croatian-2014-2",
+                        "variation_parameters": {
+                            "M": 3,
+                            "N": 4
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.3969933,
+                        "problem_name": "croatian-2014-2",
+                        "variation_parameters": {
+                            "M": 6,
+                            "N": 25
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.8251045,
+                        "problem_name": "croatian-2017-2",
+                        "variation_parameters": {
+                            "n": 20
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "No Boxed Answer",
+                        "cost": 0.8468493,
+                        "problem_name": "croatian-2017-2",
+                        "variation_parameters": {
+                            "n": 19
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.80707,
+                        "problem_name": "croatian-2017-2",
+                        "variation_parameters": {
+                            "n": 17
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0681648,
+                        "problem_name": "croatian-2017-2",
+                        "variation_parameters": {
+                            "n": 16
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.11431310000000001,
+                        "problem_name": "croatian-2018-4",
+                        "variation_parameters": {
+                            "n": 6
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "No Boxed Answer",
+                        "cost": 0.8453379000000001,
+                        "problem_name": "croatian-2018-4",
+                        "variation_parameters": {
+                            "n": 7
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "No Boxed Answer",
+                        "cost": 0.8453379000000001,
+                        "problem_name": "croatian-2018-4",
+                        "variation_parameters": {
+                            "n": 8
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.048833400000000006,
+                        "problem_name": "croatian-2020-4",
+                        "variation_parameters": {
+                            "n": 8
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_FORMAT",
+                        "cost": 0.10214820000000002,
+                        "problem_name": "croatian-2020-4",
+                        "variation_parameters": {
+                            "n": 14
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.18847070000000002,
+                        "problem_name": "croatian-2020-4",
+                        "variation_parameters": {
+                            "n": 10
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_FORMAT",
+                        "cost": 0.0979055,
+                        "problem_name": "croatian-2020-4",
+                        "variation_parameters": {
+                            "n": 11
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.10315360000000001,
+                        "problem_name": "croatian-2022-1",
+                        "variation_parameters": {
+                            "n": 20
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.17479,
+                        "problem_name": "croatian-2022-1",
+                        "variation_parameters": {
+                            "n": 28
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0396451,
+                        "problem_name": "croatian-2022-1",
+                        "variation_parameters": {
+                            "n": 16
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.14536170000000004,
+                        "problem_name": "croatian-2022-1",
+                        "variation_parameters": {
+                            "n": 22
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.6295212,
+                        "problem_name": "croatian-2023-5",
+                        "variation_parameters": {
+                            "k": 4,
+                            "l": 5,
+                            "n": 10
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1638153,
+                        "problem_name": "croatian-2023-5",
+                        "variation_parameters": {
+                            "k": 7,
+                            "l": 7,
+                            "n": 12
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.5565054,
+                        "problem_name": "croatian-2023-5",
+                        "variation_parameters": {
+                            "k": 5,
+                            "l": 4,
+                            "n": 10
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.35266770000000003,
+                        "problem_name": "croatian-2023-5",
+                        "variation_parameters": {
+                            "k": 4,
+                            "l": 4,
+                            "n": 6
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0325116,
+                        "problem_name": "dutch-2010-4",
+                        "variation_parameters": {
+                            "k": 10,
+                            "m": 1000
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.16703060000000003,
+                        "problem_name": "dutch-2010-4",
+                        "variation_parameters": {
+                            "k": 22,
+                            "m": 28670
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.31090950000000006,
+                        "problem_name": "dutch-2010-4",
+                        "variation_parameters": {
+                            "k": 28,
+                            "m": 5402
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0977735,
+                        "problem_name": "dutch-2010-4",
+                        "variation_parameters": {
+                            "k": 11,
+                            "m": 29282
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.17182220000000004,
+                        "problem_name": "dutch-2012-2",
+                        "variation_parameters": {
+                            "n": 5
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0878768,
+                        "problem_name": "dutch-2012-2",
+                        "variation_parameters": {
+                            "n": 11
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0318318,
+                        "problem_name": "dutch-2012-2",
+                        "variation_parameters": {
+                            "n": 7
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.056969000000000006,
+                        "problem_name": "dutch-2012-2",
+                        "variation_parameters": {
+                            "n": 13
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.4894252,
+                        "problem_name": "dutch-2014-3",
+                        "variation_parameters": {
+                            "n": 7
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.7068842000000001,
+                        "problem_name": "dutch-2014-3",
+                        "variation_parameters": {
+                            "n": 10
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.7292681,
+                        "problem_name": "dutch-2014-3",
+                        "variation_parameters": {
+                            "n": 8
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.596497,
+                        "problem_name": "dutch-2014-3",
+                        "variation_parameters": {
+                            "n": 11
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.3946943,
+                        "problem_name": "dutch-2018-1",
+                        "variation_parameters": {
+                            "n": 10,
+                            "k": 50
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.4126540000000001,
+                        "problem_name": "dutch-2018-1",
+                        "variation_parameters": {
+                            "n": 17,
+                            "k": 31
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.4580774000000001,
+                        "problem_name": "dutch-2018-1",
+                        "variation_parameters": {
+                            "n": 13,
+                            "k": 41
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.20016040000000002,
+                        "problem_name": "dutch-2018-1",
+                        "variation_parameters": {
+                            "n": 11,
+                            "k": 10
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "cost": 0.31377390000000005,
+                        "problem_name": "dutch-2018-2",
+                        "variation_parameters": {
+                            "n": 15,
+                            "k": 4
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.35357630000000007,
+                        "problem_name": "dutch-2018-2",
+                        "variation_parameters": {
+                            "n": 32,
+                            "k": 6
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.20858640000000003,
+                        "problem_name": "dutch-2018-2",
+                        "variation_parameters": {
+                            "n": 24,
+                            "k": 5
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "cost": 0.3353317,
+                        "problem_name": "dutch-2018-2",
+                        "variation_parameters": {
+                            "n": 21,
+                            "k": 4
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.056707200000000006,
+                        "problem_name": "dutch-2019-2",
+                        "variation_parameters": {
+                            "k": 4,
+                            "n": 3
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0896709,
+                        "problem_name": "dutch-2019-2",
+                        "variation_parameters": {
+                            "k": 7,
+                            "n": 2
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.08774150000000001,
+                        "problem_name": "dutch-2019-2",
+                        "variation_parameters": {
+                            "k": 5,
+                            "n": 2
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.13250270000000003,
+                        "problem_name": "dutch-2019-2",
+                        "variation_parameters": {
+                            "k": 8,
+                            "n": 3
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.177815,
+                        "problem_name": "dutch-2024-2",
+                        "variation_parameters": {
+                            "m": 36
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.13008380000000003,
+                        "problem_name": "dutch-2024-2",
+                        "variation_parameters": {
+                            "m": 53
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.09468580000000001,
+                        "problem_name": "dutch-2024-2",
+                        "variation_parameters": {
+                            "m": 37
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1198714,
+                        "problem_name": "dutch-2024-2",
+                        "variation_parameters": {
+                            "m": 28
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.10635020000000002,
+                        "problem_name": "emc-2016-1",
+                        "variation_parameters": {
+                            "n": 10
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.3473492000000001,
+                        "problem_name": "emc-2016-1",
+                        "variation_parameters": {
+                            "n": 14
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.049303099999999996,
+                        "problem_name": "emc-2016-1",
+                        "variation_parameters": {
+                            "n": 8
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.5894603,
+                        "problem_name": "emc-2016-1",
+                        "variation_parameters": {
+                            "n": 11
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.08009870000000001,
+                        "problem_name": "emc-2016-3",
+                        "variation_parameters": {
+                            "n": 20
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.10332190000000001,
+                        "problem_name": "emc-2016-3",
+                        "variation_parameters": {
+                            "n": 34
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.16743650000000002,
+                        "problem_name": "emc-2016-3",
+                        "variation_parameters": {
+                            "n": 18
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.09306550000000001,
+                        "problem_name": "emc-2016-3",
+                        "variation_parameters": {
+                            "n": 13
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.19117780000000004,
+                        "problem_name": "emc-2021-1",
+                        "variation_parameters": {
+                            "n": 20
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1841202,
+                        "problem_name": "emc-2021-1",
+                        "variation_parameters": {
+                            "n": 34
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.6079843,
+                        "problem_name": "emc-2021-1",
+                        "variation_parameters": {
+                            "n": 18
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1498266,
+                        "problem_name": "emc-2021-1",
+                        "variation_parameters": {
+                            "n": 13
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.18108200000000002,
+                        "problem_name": "emc-2022-2",
+                        "variation_parameters": {
+                            "n": 10
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.2141502,
+                        "problem_name": "emc-2022-2",
+                        "variation_parameters": {
+                            "n": 11
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0620785,
+                        "problem_name": "emc-2022-2",
+                        "variation_parameters": {
+                            "n": 7
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0324885,
+                        "problem_name": "emc-2022-2",
+                        "variation_parameters": {
+                            "n": 5
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.14977490000000002,
+                        "problem_name": "emc-2023-2",
+                        "variation_parameters": {
+                            "n": 10
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "Error parsing solution",
+                        "cost": 0.31411710000000004,
+                        "problem_name": "emc-2023-2",
+                        "variation_parameters": {
+                            "n": 32
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.2927254,
+                        "problem_name": "emc-2023-2",
+                        "variation_parameters": {
+                            "n": 9
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.19681750000000003,
+                        "problem_name": "emc-2023-2",
+                        "variation_parameters": {
+                            "n": 35
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.032697500000000004,
+                        "problem_name": "imc-2012-2",
+                        "variation_parameters": {
+                            "n": 7
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0631015,
+                        "problem_name": "imc-2012-2",
+                        "variation_parameters": {
+                            "n": 19
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.023250700000000006,
+                        "problem_name": "imc-2012-2",
+                        "variation_parameters": {
+                            "n": 8
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0347919,
+                        "problem_name": "imc-2012-2",
+                        "variation_parameters": {
+                            "n": 9
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1381699,
+                        "problem_name": "imc-2013-3",
+                        "variation_parameters": {
+                            "n": 10
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0587499,
+                        "problem_name": "imc-2013-3",
+                        "variation_parameters": {
+                            "n": 14
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.044089100000000006,
+                        "problem_name": "imc-2013-3",
+                        "variation_parameters": {
+                            "n": 8
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.4100657,
+                        "problem_name": "imc-2013-3",
+                        "variation_parameters": {
+                            "n": 11
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.14500860000000004,
+                        "problem_name": "imc-2018-6",
+                        "variation_parameters": {
+                            "n": 6,
+                            "k": 10
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.086295,
+                        "problem_name": "imc-2018-6",
+                        "variation_parameters": {
+                            "n": 10,
+                            "k": 14
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.029477800000000002,
+                        "problem_name": "imc-2018-6",
+                        "variation_parameters": {
+                            "n": 9,
+                            "k": 10
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.033213400000000004,
+                        "problem_name": "imc-2018-6",
+                        "variation_parameters": {
+                            "n": 4,
+                            "k": 8
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1369313,
+                        "problem_name": "imc-2019-9",
+                        "variation_parameters": {
+                            "n": 4
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.21657680000000004,
+                        "problem_name": "imc-2019-9",
+                        "variation_parameters": {
+                            "n": 18
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0670219,
+                        "problem_name": "imc-2019-9",
+                        "variation_parameters": {
+                            "n": 8
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.10045860000000001,
+                        "problem_name": "imc-2019-9",
+                        "variation_parameters": {
+                            "n": 14
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.030924300000000002,
+                        "problem_name": "imo-shortlist-2000-c4",
+                        "variation_parameters": {
+                            "n": 10,
+                            "k": 5
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.14991130000000003,
+                        "problem_name": "imo-shortlist-2000-c4",
+                        "variation_parameters": {
+                            "n": 21,
+                            "k": 14
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1682098,
+                        "problem_name": "imo-shortlist-2000-c4",
+                        "variation_parameters": {
+                            "n": 13,
+                            "k": 7
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "No Boxed Answer",
+                        "cost": 0.8458626,
+                        "problem_name": "imo-shortlist-2000-c4",
+                        "variation_parameters": {
+                            "n": 10,
+                            "k": 6
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.13920390000000002,
+                        "problem_name": "imo-shortlist-2001-c5",
+                        "variation_parameters": {
+                            "k": 10
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.3302343,
+                        "problem_name": "imo-shortlist-2001-c5",
+                        "variation_parameters": {
+                            "k": 17
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0860838,
+                        "problem_name": "imo-shortlist-2001-c5",
+                        "variation_parameters": {
+                            "k": 9
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1495098,
+                        "problem_name": "imo-shortlist-2001-c5",
+                        "variation_parameters": {
+                            "k": 6
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.3159948,
+                        "problem_name": "imo-shortlist-2001-c6",
+                        "variation_parameters": {
+                            "n": 4
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.37725820000000004,
+                        "problem_name": "imo-shortlist-2001-c6",
+                        "variation_parameters": {
+                            "n": 5
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.32691780000000004,
+                        "problem_name": "imo-shortlist-2001-c6",
+                        "variation_parameters": {
+                            "n": 6
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.49039869999999997,
+                        "problem_name": "imo-shortlist-2001-n6",
+                        "variation_parameters": {
+                            "p": 100,
+                            "n": 25000
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.2893198,
+                        "problem_name": "imo-shortlist-2001-n6",
+                        "variation_parameters": {
+                            "p": 132,
+                            "n": 40000
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.3609749,
+                        "problem_name": "imo-shortlist-2001-n6",
+                        "variation_parameters": {
+                            "p": 95,
+                            "n": 20000
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.2883738,
+                        "problem_name": "imo-shortlist-2001-n6",
+                        "variation_parameters": {
+                            "p": 113,
+                            "n": 30000
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "No Boxed Answer",
+                        "cost": 0.8456217,
+                        "problem_name": "imo-shortlist-2002-n4",
+                        "variation_parameters": {
+                            "k": 15
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.5396941000000001,
+                        "problem_name": "imo-shortlist-2002-n4",
+                        "variation_parameters": {
+                            "k": 17
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1864346,
+                        "problem_name": "imo-shortlist-2002-n4",
+                        "variation_parameters": {
+                            "k": 13
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.22171380000000002,
+                        "problem_name": "imo-shortlist-2002-n4",
+                        "variation_parameters": {
+                            "k": 11
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1418395,
+                        "problem_name": "imo-shortlist-2003-n2",
+                        "variation_parameters": {
+                            "k": 15
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.15865189999999998,
+                        "problem_name": "imo-shortlist-2003-n2",
+                        "variation_parameters": {
+                            "k": 27
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.08807590000000001,
+                        "problem_name": "imo-shortlist-2003-n2",
+                        "variation_parameters": {
+                            "k": 19
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.5292738,
+                        "problem_name": "imo-shortlist-2003-n2",
+                        "variation_parameters": {
+                            "k": 16
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0424149,
+                        "problem_name": "imo-shortlist-2003-n3",
+                        "variation_parameters": {
+                            "k": 10
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0865293,
+                        "problem_name": "imo-shortlist-2003-n3",
+                        "variation_parameters": {
+                            "k": 22
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0668789,
+                        "problem_name": "imo-shortlist-2003-n3",
+                        "variation_parameters": {
+                            "k": 14
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.15402970000000002,
+                        "problem_name": "imo-shortlist-2003-n3",
+                        "variation_parameters": {
+                            "k": 11
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.2567026,
+                        "problem_name": "imo-shortlist-2005-c8",
+                        "variation_parameters": {
+                            "n": 15
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.30169260000000003,
+                        "problem_name": "imo-shortlist-2005-c8",
+                        "variation_parameters": {
+                            "n": 20
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.4112207,
+                        "problem_name": "imo-shortlist-2005-c8",
+                        "variation_parameters": {
+                            "n": 16
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.2748416,
+                        "problem_name": "imo-shortlist-2005-c8",
+                        "variation_parameters": {
+                            "n": 14
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1250821,
+                        "problem_name": "imo-shortlist-2006-c5",
+                        "variation_parameters": {
+                            "n": 24,
+                            "k": 5
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1039544,
+                        "problem_name": "imo-shortlist-2006-c5",
+                        "variation_parameters": {
+                            "n": 96,
+                            "k": 3
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.05439720000000001,
+                        "problem_name": "imo-shortlist-2006-c5",
+                        "variation_parameters": {
+                            "n": 28,
+                            "k": 3
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.05209600000000001,
+                        "problem_name": "imo-shortlist-2006-c5",
+                        "variation_parameters": {
+                            "n": 60,
+                            "k": 3
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.26864530000000003,
+                        "problem_name": "imo-shortlist-2008-a2",
+                        "variation_parameters": {
+                            "n": 20
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.11028380000000002,
+                        "problem_name": "imo-shortlist-2008-a2",
+                        "variation_parameters": {
+                            "n": 22
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.11663740000000002,
+                        "problem_name": "imo-shortlist-2008-a2",
+                        "variation_parameters": {
+                            "n": 14
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.17134480000000002,
+                        "problem_name": "imo-shortlist-2008-a2",
+                        "variation_parameters": {
+                            "n": 11
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0825308,
+                        "problem_name": "imo-shortlist-2009-c2",
+                        "variation_parameters": {
+                            "n": 30,
+                            "N": 21
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.10184240000000001,
+                        "problem_name": "imo-shortlist-2009-c2",
+                        "variation_parameters": {
+                            "n": 47,
+                            "N": 32
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.5417687,
+                        "problem_name": "imo-shortlist-2009-c2",
+                        "variation_parameters": {
+                            "n": 24,
+                            "N": 17
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.13946680000000003,
+                        "problem_name": "imo-shortlist-2009-c2",
+                        "variation_parameters": {
+                            "n": 50,
+                            "N": 34
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0963688,
+                        "problem_name": "imo-shortlist-2010-n1",
+                        "variation_parameters": {
+                            "k": 42
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.057926000000000005,
+                        "problem_name": "imo-shortlist-2010-n1",
+                        "variation_parameters": {
+                            "k": 51
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.30824860000000004,
+                        "problem_name": "imo-shortlist-2011-a1",
+                        "variation_parameters": {
+                            "n": 21
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.11098890000000002,
+                        "problem_name": "imo-shortlist-2011-a1",
+                        "variation_parameters": {
+                            "n": 22
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.14005090000000003,
+                        "problem_name": "imo-shortlist-2011-a1",
+                        "variation_parameters": {
+                            "n": 14
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "No Boxed Answer",
+                        "cost": 0.845724,
+                        "problem_name": "imo-shortlist-2011-a1",
+                        "variation_parameters": {
+                            "n": 11
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.2343935,
+                        "problem_name": "imo-shortlist-2012-c2",
+                        "variation_parameters": {
+                            "n": 70,
+                            "m": 27
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1246135,
+                        "problem_name": "imo-shortlist-2012-c2",
+                        "variation_parameters": {
+                            "n": 72,
+                            "m": 28
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1274207,
+                        "problem_name": "imo-shortlist-2012-c2",
+                        "variation_parameters": {
+                            "n": 40,
+                            "m": 15
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.2599883,
+                        "problem_name": "imo-shortlist-2012-c2",
+                        "variation_parameters": {
+                            "n": 30,
+                            "m": 11
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.07703520000000001,
+                        "problem_name": "imo-shortlist-2014-c3",
+                        "variation_parameters": {
+                            "n": 22,
+                            "k": 5
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.05298920000000001,
+                        "problem_name": "imo-shortlist-2014-c3",
+                        "variation_parameters": {
+                            "n": 19,
+                            "k": 5
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.08726520000000001,
+                        "problem_name": "imo-shortlist-2014-c3",
+                        "variation_parameters": {
+                            "n": 16,
+                            "k": 4
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.05208720000000001,
+                        "problem_name": "imo-shortlist-2014-c3",
+                        "variation_parameters": {
+                            "n": 15,
+                            "k": 4
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0781649,
+                        "problem_name": "imo-shortlist-2014-n2",
+                        "variation_parameters": {
+                            "n": 25
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.1504503,
+                        "problem_name": "imo-shortlist-2014-n2",
+                        "variation_parameters": {
+                            "n": 32
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0502799,
+                        "problem_name": "imo-shortlist-2014-n2",
+                        "variation_parameters": {
+                            "n": 24
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0523039,
+                        "problem_name": "imo-shortlist-2014-n2",
+                        "variation_parameters": {
+                            "n": 21
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.3642419,
+                        "problem_name": "imo-shortlist-2016-a5",
+                        "variation_parameters": {
+                            "n": 10000000000000000000
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1865182,
+                        "problem_name": "imo-shortlist-2016-a5",
+                        "variation_parameters": {
+                            "n": 17758176404715800194
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.46015970000000006,
+                        "problem_name": "imo-shortlist-2016-a5",
+                        "variation_parameters": {
+                            "n": 24089154938208861744
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.25536610000000004,
+                        "problem_name": "imo-shortlist-2016-a5",
+                        "variation_parameters": {
+                            "n": 11043188731678011336
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.6888673000000001,
+                        "problem_name": "imo-shortlist-2016-c4",
+                        "variation_parameters": {
+                            "n": 9
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "cost": 0.5447915,
+                        "problem_name": "imo-shortlist-2016-c4",
+                        "variation_parameters": {
+                            "n": 36
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.16626280000000002,
+                        "problem_name": "imo-shortlist-2016-c4",
+                        "variation_parameters": {
+                            "n": 18
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "cost": 0.5014361,
+                        "problem_name": "imo-shortlist-2016-c4",
+                        "variation_parameters": {
+                            "n": 45
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.052213699999999995,
+                        "problem_name": "imo-shortlist-2017-n3",
+                        "variation_parameters": {
+                            "n": 30
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.533137,
+                        "problem_name": "imo-shortlist-2017-n3",
+                        "variation_parameters": {
+                            "n": 35
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.15673020000000001,
+                        "problem_name": "imo-shortlist-2017-n3",
+                        "variation_parameters": {
+                            "n": 25
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.5931662000000001,
+                        "problem_name": "imo-shortlist-2017-n3",
+                        "variation_parameters": {
+                            "n": 21
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.28541700000000003,
+                        "problem_name": "imo-shortlist-2017-n6",
+                        "variation_parameters": {
+                            "n": 10
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.44675510000000007,
+                        "problem_name": "imo-shortlist-2017-n6",
+                        "variation_parameters": {
+                            "n": 17
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.32229670000000005,
+                        "problem_name": "imo-shortlist-2017-n6",
+                        "variation_parameters": {
+                            "n": 9
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.2930543,
+                        "problem_name": "imo-shortlist-2017-n6",
+                        "variation_parameters": {
+                            "n": 6
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.5527016,
+                        "problem_name": "imo-shortlist-2018-c1",
+                        "variation_parameters": {
+                            "n": 10
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.3765564,
+                        "problem_name": "imo-shortlist-2018-c1",
+                        "variation_parameters": {
+                            "n": 11
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.4913744000000001,
+                        "problem_name": "imo-shortlist-2018-c1",
+                        "variation_parameters": {
+                            "n": 9
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.5090910000000001,
+                        "problem_name": "imo-shortlist-2018-c1",
+                        "variation_parameters": {
+                            "n": 8
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.011755700000000003,
+                        "problem_name": "imo-shortlist-2020-a3",
+                        "variation_parameters": {}
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.09482660000000001,
+                        "problem_name": "imo-shortlist-2020-n1",
+                        "variation_parameters": {
+                            "k": 10
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.6117122,
+                        "problem_name": "imo-shortlist-2020-n1",
+                        "variation_parameters": {
+                            "k": 29
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0758208,
+                        "problem_name": "imo-shortlist-2020-n1",
+                        "variation_parameters": {
+                            "k": 13
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.060295400000000006,
+                        "problem_name": "imo-shortlist-2020-n1",
+                        "variation_parameters": {
+                            "k": 8
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.10595530000000002,
+                        "problem_name": "imo-shortlist-2021-a3",
+                        "variation_parameters": {
+                            "n": 30
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.08076860000000001,
+                        "problem_name": "imo-shortlist-2021-a3",
+                        "variation_parameters": {
+                            "n": 37
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.22214830000000002,
+                        "problem_name": "imo-shortlist-2021-a3",
+                        "variation_parameters": {
+                            "n": 29
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.12396230000000001,
+                        "problem_name": "imo-shortlist-2021-a3",
+                        "variation_parameters": {
+                            "n": 26
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0514921,
+                        "problem_name": "imo-shortlist-2022-a5",
+                        "variation_parameters": {
+                            "n": 4
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.012988800000000002,
+                        "problem_name": "imo-shortlist-2022-a5",
+                        "variation_parameters": {
+                            "n": 3
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "cost": 0.16151959999999999,
+                        "problem_name": "imo-shortlist-2022-c1",
+                        "variation_parameters": {
+                            "n": 62,
+                            "C": 16
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "cost": 0.3163457,
+                        "problem_name": "imo-shortlist-2022-c1",
+                        "variation_parameters": {
+                            "n": 90,
+                            "C": 23
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "cost": 0.1291345,
+                        "problem_name": "imo-shortlist-2022-c1",
+                        "variation_parameters": {
+                            "n": 58,
+                            "C": 15
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.2817628,
+                        "problem_name": "imo-shortlist-2022-c1",
+                        "variation_parameters": {
+                            "n": 46,
+                            "C": 12
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.2977953,
+                        "problem_name": "imo-shortlist-2022-c8",
+                        "variation_parameters": {
+                            "n": 19
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.40295860000000006,
+                        "problem_name": "imo-shortlist-2022-c8",
+                        "variation_parameters": {
+                            "n": 22
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.4773472000000001,
+                        "problem_name": "imo-shortlist-2022-c8",
+                        "variation_parameters": {
+                            "n": 14
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.43327570000000004,
+                        "problem_name": "imo-shortlist-2022-c8",
+                        "variation_parameters": {
+                            "n": 11
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "cost": 0.7213700999999999,
+                        "problem_name": "imo-shortlist-2023-a5",
+                        "variation_parameters": {
+                            "n": 59,
+                            "k": 16
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.4791600000000001,
+                        "problem_name": "imo-shortlist-2023-a5",
+                        "variation_parameters": {
+                            "n": 431,
+                            "k": 109
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.44898370000000004,
+                        "problem_name": "imo-shortlist-2023-a5",
+                        "variation_parameters": {
+                            "n": 175,
+                            "k": 45
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.5719032,
+                        "problem_name": "imo-shortlist-2023-a5",
+                        "variation_parameters": {
+                            "n": 95,
+                            "k": 25
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.2285745,
+                        "problem_name": "imo-shortlist-2023-c2",
+                        "variation_parameters": {
+                            "k": 5
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1947198,
+                        "problem_name": "imo-shortlist-2023-c2",
+                        "variation_parameters": {
+                            "k": 6
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.0845724,
+                        "problem_name": "imo-shortlist-2023-c2",
+                        "variation_parameters": {
+                            "k": 4
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1028896,
+                        "problem_name": "imo-shortlist-2023-c2",
+                        "variation_parameters": {
+                            "k": 3
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.45859330000000004,
+                        "problem_name": "jbmo-shortlist-2008-c1",
+                        "variation_parameters": {
+                            "N": 5
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.089936,
+                        "problem_name": "jbmo-shortlist-2008-c1",
+                        "variation_parameters": {
+                            "N": 8
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1901702,
+                        "problem_name": "jbmo-shortlist-2008-c1",
+                        "variation_parameters": {
+                            "N": 6
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.48898410000000003,
+                        "problem_name": "jbmo-shortlist-2008-c1",
+                        "variation_parameters": {
+                            "N": 9
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.009722900000000001,
+                        "problem_name": "jbmo-shortlist-2016-c2",
+                        "variation_parameters": {}
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.2868294,
+                        "problem_name": "jbmo-shortlist-2018-n4",
+                        "variation_parameters": {
+                            "N": 7
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.09764700000000001,
+                        "problem_name": "jbmo-shortlist-2018-n4",
+                        "variation_parameters": {
+                            "N": 10
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.19216780000000003,
+                        "problem_name": "jbmo-shortlist-2018-n4",
+                        "variation_parameters": {
+                            "N": 8
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.18397940000000002,
+                        "problem_name": "jbmo-shortlist-2018-n4",
+                        "variation_parameters": {
+                            "N": 9
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "cost": 0.12418340000000003,
+                        "problem_name": "jbmo-shortlist-2018-p3",
+                        "variation_parameters": {
+                            "n": 120
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "cost": 0.09187200000000001,
+                        "problem_name": "jbmo-shortlist-2018-p3",
+                        "variation_parameters": {
+                            "n": 222
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "cost": 0.063558,
+                        "problem_name": "jbmo-shortlist-2018-p3",
+                        "variation_parameters": {
+                            "n": 84
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "Error parsing solution",
+                        "cost": 0.06584050000000001,
+                        "problem_name": "jbmo-shortlist-2018-p3",
+                        "variation_parameters": {
+                            "n": 225
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "No Boxed Answer",
+                        "cost": 0.8458559999999999,
+                        "problem_name": "jbmo-shortlist-2019-c4",
+                        "variation_parameters": {
+                            "N": 50
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_FORMAT",
+                        "cost": 0.8385608,
+                        "problem_name": "jbmo-shortlist-2019-c4",
+                        "variation_parameters": {
+                            "N": 44
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "No Boxed Answer",
+                        "cost": 0.8473608,
+                        "problem_name": "jbmo-shortlist-2019-c4",
+                        "variation_parameters": {
+                            "N": 28
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "No Boxed Answer",
+                        "cost": 0.8458559999999999,
+                        "problem_name": "jbmo-shortlist-2019-c4",
+                        "variation_parameters": {
+                            "N": 23
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0222409,
+                        "problem_name": "jbmo-shortlist-2021-c5",
+                        "variation_parameters": {
+                            "a": 11,
+                            "b": 7,
+                            "N": 15
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.024911700000000002,
+                        "problem_name": "jbmo-shortlist-2021-c5",
+                        "variation_parameters": {
+                            "a": 8,
+                            "b": 5,
+                            "N": 10
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0156365,
+                        "problem_name": "jbmo-shortlist-2021-c5",
+                        "variation_parameters": {
+                            "a": 4,
+                            "b": 2,
+                            "N": 6
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.012024100000000001,
+                        "problem_name": "jbmo-shortlist-2021-c5",
+                        "variation_parameters": {
+                            "a": 2,
+                            "b": 2,
+                            "N": 4
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1599037,
+                        "problem_name": "jbmo-shortlist-2023-c1",
+                        "variation_parameters": {
+                            "N": 17,
+                            "M": 9
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.09275420000000001,
+                        "problem_name": "jbmo-shortlist-2023-c1",
+                        "variation_parameters": {
+                            "N": 21,
+                            "M": 11
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.19126800000000005,
+                        "problem_name": "jbmo-shortlist-2023-c1",
+                        "variation_parameters": {
+                            "N": 15,
+                            "M": 8
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.086251,
+                        "problem_name": "jbmo-shortlist-2023-c1",
+                        "variation_parameters": {
+                            "N": 19,
+                            "M": 10
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.251416,
+                        "problem_name": "jbmo-shortlist-2023-n3",
+                        "variation_parameters": {}
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.06169020000000001,
+                        "problem_name": "konhauser-2013-1",
+                        "variation_parameters": {
+                            "a": 4,
+                            "b": 3
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0477037,
+                        "problem_name": "konhauser-2013-1",
+                        "variation_parameters": {
+                            "a": 48,
+                            "b": 64
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.06845960000000001,
+                        "problem_name": "konhauser-2013-1",
+                        "variation_parameters": {
+                            "a": 16,
+                            "b": 30
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.09043430000000001,
+                        "problem_name": "konhauser-2013-1",
+                        "variation_parameters": {
+                            "a": 15,
+                            "b": 8
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.017595600000000003,
+                        "problem_name": "konhauser-2014-7",
+                        "variation_parameters": {
+                            "a": 3,
+                            "b": 3,
+                            "c": 2,
+                            "d": 9,
+                            "e": 6,
+                            "f": 19
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0087252,
+                        "problem_name": "konhauser-2014-7",
+                        "variation_parameters": {
+                            "a": 8,
+                            "b": 8,
+                            "c": 5,
+                            "d": 64,
+                            "e": 40,
+                            "f": 129
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0162536,
+                        "problem_name": "konhauser-2014-7",
+                        "variation_parameters": {
+                            "a": 4,
+                            "b": 9,
+                            "c": 2,
+                            "d": 16,
+                            "e": 18,
+                            "f": 103
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0180312,
+                        "problem_name": "konhauser-2014-7",
+                        "variation_parameters": {
+                            "a": 8,
+                            "b": 2,
+                            "c": 8,
+                            "d": 64,
+                            "e": 16,
+                            "f": 84
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0182457,
+                        "problem_name": "konhauser-2015-2",
+                        "variation_parameters": {
+                            "k": 3,
+                            "n": 7,
+                            "m": 5,
+                            "l": 25
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0264759,
+                        "problem_name": "konhauser-2015-2",
+                        "variation_parameters": {
+                            "k": 50,
+                            "n": 51,
+                            "m": 50.5,
+                            "l": 112
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0251911,
+                        "problem_name": "konhauser-2015-2",
+                        "variation_parameters": {
+                            "k": 5,
+                            "n": 19,
+                            "m": 12.0,
+                            "l": 70
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0219923,
+                        "problem_name": "konhauser-2015-2",
+                        "variation_parameters": {
+                            "k": 3,
+                            "n": 9,
+                            "m": 6.0,
+                            "l": 26
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.26599100000000003,
+                        "problem_name": "konhauser-2016-1",
+                        "variation_parameters": {
+                            "number": 6,
+                            "time": "1"
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.2939618,
+                        "problem_name": "konhauser-2016-1",
+                        "variation_parameters": {
+                            "number": 10,
+                            "time": "\\frac{1023}{1024}"
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1415645,
+                        "problem_name": "konhauser-2016-1",
+                        "variation_parameters": {
+                            "number": 5,
+                            "time": "\\frac{31}{32}"
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1664971,
+                        "problem_name": "konhauser-2016-1",
+                        "variation_parameters": {
+                            "number": 8,
+                            "time": "\\frac{255}{256}"
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1647778,
+                        "problem_name": "konhauser-2016-3",
+                        "variation_parameters": {
+                            "n": 7,
+                            "m": 7
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1798951,
+                        "problem_name": "konhauser-2016-3",
+                        "variation_parameters": {
+                            "n": 9,
+                            "m": 10
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.09531280000000003,
+                        "problem_name": "konhauser-2016-3",
+                        "variation_parameters": {
+                            "n": 5,
+                            "m": 9
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0286715,
+                        "problem_name": "konhauser-2016-3",
+                        "variation_parameters": {
+                            "n": 3,
+                            "m": 4
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.7762645,
+                        "problem_name": "konhauser-2019-1",
+                        "variation_parameters": {
+                            "permutation": "1,2,3,4,5,6,7,8,9,10,11,12,13"
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.5942189,
+                        "problem_name": "konhauser-2019-1",
+                        "variation_parameters": {
+                            "permutation": "2,11,10,6,12,3,4,8,9,5,1,13,7"
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.4866642,
+                        "problem_name": "konhauser-2019-1",
+                        "variation_parameters": {
+                            "permutation": "9,13,1,12,6,4,7,8,11,5,2,10,3"
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.7942693,
+                        "problem_name": "konhauser-2019-1",
+                        "variation_parameters": {
+                            "permutation": "10,4,7,13,11,8,9,5,3,6,12,2,1"
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0439483,
+                        "problem_name": "konhauser-2020-9",
+                        "variation_parameters": {
+                            "p1": 2,
+                            "p2": 3,
+                            "p3": 5,
+                            "p4": 101
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.5349212,
+                        "problem_name": "konhauser-2020-9",
+                        "variation_parameters": {
+                            "p1": 41,
+                            "p2": 97,
+                            "p3": 43,
+                            "p4": 3
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0724548,
+                        "problem_name": "konhauser-2020-9",
+                        "variation_parameters": {
+                            "p1": 11,
+                            "p2": 67,
+                            "p3": 97,
+                            "p4": 5
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.11528880000000002,
+                        "problem_name": "konhauser-2020-9",
+                        "variation_parameters": {
+                            "p1": 13,
+                            "p2": 89,
+                            "p3": 79,
+                            "p4": 29
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0332156,
+                        "problem_name": "konhauser-2021-10",
+                        "variation_parameters": {
+                            "l": 10,
+                            "k": 10,
+                            "m": 5
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.059914800000000004,
+                        "problem_name": "konhauser-2021-10",
+                        "variation_parameters": {
+                            "l": 20,
+                            "k": 51,
+                            "m": 18
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.039450400000000004,
+                        "problem_name": "konhauser-2021-10",
+                        "variation_parameters": {
+                            "l": 12,
+                            "k": 7,
+                            "m": 13
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.030492000000000005,
+                        "problem_name": "konhauser-2021-10",
+                        "variation_parameters": {
+                            "l": 9,
+                            "k": 5,
+                            "m": 7
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.059698100000000004,
+                        "problem_name": "konhauser-2023-3",
+                        "variation_parameters": {
+                            "n": 10,
+                            "k": 14
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1282193,
+                        "problem_name": "konhauser-2023-3",
+                        "variation_parameters": {
+                            "n": 14,
+                            "k": 11
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0988977,
+                        "problem_name": "konhauser-2023-3",
+                        "variation_parameters": {
+                            "n": 11,
+                            "k": 18
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.19259130000000002,
+                        "problem_name": "konhauser-2023-3",
+                        "variation_parameters": {
+                            "n": 10,
+                            "k": 13
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.13174590000000003,
+                        "problem_name": "misc-balticway-2005-19",
+                        "variation_parameters": {
+                            "N": 10,
+                            "M": 15
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.2595043,
+                        "problem_name": "misc-balticway-2005-19",
+                        "variation_parameters": {
+                            "N": 9,
+                            "M": 10
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.1440307,
+                        "problem_name": "misc-balticway-2005-19",
+                        "variation_parameters": {
+                            "N": 5,
+                            "M": 7
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.07915930000000002,
+                        "problem_name": "misc-balticway-2005-19",
+                        "variation_parameters": {
+                            "N": 3,
+                            "M": 7
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1478807,
+                        "problem_name": "misc-handout-nz1",
+                        "variation_parameters": {
+                            "n": 8
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.07451840000000001,
+                        "problem_name": "misc-handout-nz1",
+                        "variation_parameters": {
+                            "n": 7
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_FORMAT",
+                        "cost": 0.25167120000000004,
+                        "problem_name": "misc-vwo-2019-4",
+                        "variation_parameters": {
+                            "n": 25,
+                            "k": 25
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.5589716,
+                        "problem_name": "misc-vwo-2019-4",
+                        "variation_parameters": {
+                            "n": 49,
+                            "k": 48
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.5391001,
+                        "problem_name": "misc-vwo-2019-4",
+                        "variation_parameters": {
+                            "n": 33,
+                            "k": 32
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "No Boxed Answer",
+                        "cost": 0.8456216999999999,
+                        "problem_name": "misc-vwo-2019-4",
+                        "variation_parameters": {
+                            "n": 28,
+                            "k": 28
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "cost": 0.0639584,
+                        "problem_name": "putnam-2009-b6",
+                        "variation_parameters": {
+                            "m": 10,
+                            "n": 7
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "cost": 0.05415300000000001,
+                        "problem_name": "putnam-2009-b6",
+                        "variation_parameters": {
+                            "m": 32,
+                            "n": 16
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "cost": 0.07981160000000001,
+                        "problem_name": "putnam-2009-b6",
+                        "variation_parameters": {
+                            "m": 16,
+                            "n": 5
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "cost": 0.059213,
+                        "problem_name": "putnam-2009-b6",
+                        "variation_parameters": {
+                            "m": 11,
+                            "n": 5
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0514789,
+                        "problem_name": "putnam-2015-a2",
+                        "variation_parameters": {
+                            "n": 2015
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.031324700000000004,
+                        "problem_name": "putnam-2015-a2",
+                        "variation_parameters": {
+                            "n": 11685
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.025384700000000003,
+                        "problem_name": "putnam-2015-a2",
+                        "variation_parameters": {
+                            "n": 4095
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0146696,
+                        "problem_name": "putnam-2015-a2",
+                        "variation_parameters": {
+                            "n": 285
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.4664022000000001,
+                        "problem_name": "putnam-2022-b4",
+                        "variation_parameters": {
+                            "n": 21
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.29869070000000003,
+                        "problem_name": "putnam-2022-b4",
+                        "variation_parameters": {
+                            "n": 27
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.5263995,
+                        "problem_name": "putnam-2022-b4",
+                        "variation_parameters": {
+                            "n": 15
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.4135615,
+                        "problem_name": "putnam-2022-b4",
+                        "variation_parameters": {
+                            "n": 9
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.27619790000000005,
+                        "problem_name": "putnam-2023-b2",
+                        "variation_parameters": {
+                            "m": 1
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.20461540000000006,
+                        "problem_name": "putnam-2023-b2",
+                        "variation_parameters": {
+                            "m": 15
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.2130051,
+                        "problem_name": "putnam-2023-b2",
+                        "variation_parameters": {
+                            "m": 7
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.2829607,
+                        "problem_name": "putnam-2023-b2",
+                        "variation_parameters": {
+                            "m": 4
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.061090700000000005,
+                        "problem_name": "serbian-2013-mo-4",
+                        "variation_parameters": {
+                            "n": 16
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.12605670000000002,
+                        "problem_name": "serbian-2013-mo-4",
+                        "variation_parameters": {
+                            "n": 12
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.17222150000000003,
+                        "problem_name": "serbian-2013-mo-4",
+                        "variation_parameters": {
+                            "n": 10
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.23868350000000002,
+                        "problem_name": "serbian-2013-mo-4",
+                        "variation_parameters": {
+                            "n": 18
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.023829300000000005,
+                        "problem_name": "serbian-2020-tst-4",
+                        "variation_parameters": {
+                            "m": 8
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.026077700000000002,
+                        "problem_name": "serbian-2020-tst-4",
+                        "variation_parameters": {
+                            "m": 9
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0202433,
+                        "problem_name": "serbian-2020-tst-4",
+                        "variation_parameters": {
+                            "m": 5
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.013313300000000002,
+                        "problem_name": "serbian-2020-tst-4",
+                        "variation_parameters": {
+                            "m": 3
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.06863230000000002,
+                        "problem_name": "serbian-2022-tst-3",
+                        "variation_parameters": {
+                            "m": 6
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_FORMAT",
+                        "cost": 0.3493105,
+                        "problem_name": "serbian-2022-tst-3",
+                        "variation_parameters": {
+                            "m": 10
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.06087070000000001,
+                        "problem_name": "serbian-2022-tst-3",
+                        "variation_parameters": {
+                            "m": 5
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.08852030000000002,
+                        "problem_name": "serbian-2022-tst-3",
+                        "variation_parameters": {
+                            "m": 8
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.2808366,
+                        "problem_name": "serbian-2023-tst-1",
+                        "variation_parameters": {
+                            "n": 28,
+                            "maxe": 322
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.08980510000000001,
+                        "problem_name": "serbian-2023-tst-1",
+                        "variation_parameters": {
+                            "n": 21,
+                            "maxe": 175
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.035021800000000006,
+                        "problem_name": "swiss-2018-8-selection",
+                        "variation_parameters": {
+                            "k": 15
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.045014200000000004,
+                        "problem_name": "swiss-2018-8-selection",
+                        "variation_parameters": {
+                            "k": 22
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.025016200000000002,
+                        "problem_name": "swiss-2018-8-selection",
+                        "variation_parameters": {
+                            "k": 14
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.03955820000000001,
+                        "problem_name": "swiss-2018-8-selection",
+                        "variation_parameters": {
+                            "k": 11
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.103829,
+                        "problem_name": "swiss-2019-3",
+                        "variation_parameters": {
+                            "k": 4,
+                            "m": 10
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.24329690000000004,
+                        "problem_name": "swiss-2019-3",
+                        "variation_parameters": {
+                            "k": 26,
+                            "m": 16
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "cost": 0.1613304,
+                        "problem_name": "swiss-2019-3",
+                        "variation_parameters": {
+                            "k": 10,
+                            "m": 19
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.08733450000000001,
+                        "problem_name": "swiss-2019-3",
+                        "variation_parameters": {
+                            "k": 5,
+                            "m": 11
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0943404,
+                        "problem_name": "swiss-2020-1-selection",
+                        "variation_parameters": {
+                            "n": 6
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.49015450000000005,
+                        "problem_name": "swiss-2020-1-selection",
+                        "variation_parameters": {
+                            "n": 10
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0954866,
+                        "problem_name": "swiss-2020-1-selection",
+                        "variation_parameters": {
+                            "n": 4
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.309441,
+                        "problem_name": "swiss-2020-1-selection",
+                        "variation_parameters": {
+                            "n": 8
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.15866070000000002,
+                        "problem_name": "swiss-2021-r2-z1",
+                        "variation_parameters": {
+                            "n": 25
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.3611267,
+                        "problem_name": "swiss-2021-r2-z1",
+                        "variation_parameters": {
+                            "n": 17
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.07168590000000001,
+                        "problem_name": "swiss-2021-r2-z1",
+                        "variation_parameters": {
+                            "n": 14
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "Error parsing solution",
+                        "cost": 0.38885440000000004,
+                        "problem_name": "swiss-2021-r2-z1",
+                        "variation_parameters": {
+                            "n": 20
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.12181290000000002,
+                        "problem_name": "swiss-2022-1-selection",
+                        "variation_parameters": {
+                            "n": 16
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.20796820000000002,
+                        "problem_name": "swiss-2022-1-selection",
+                        "variation_parameters": {
+                            "n": 17
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.06277260000000001,
+                        "problem_name": "swiss-2022-1-selection",
+                        "variation_parameters": {
+                            "n": 12
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.11775940000000001,
+                        "problem_name": "swiss-2022-1-selection",
+                        "variation_parameters": {
+                            "n": 15
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0231341,
+                        "problem_name": "swiss-2023-5",
+                        "variation_parameters": {}
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.6086619000000001,
+                        "problem_name": "swiss-2024-11-selection",
+                        "variation_parameters": {
+                            "m": 4,
+                            "n": 4,
+                            "max_moves": 16
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "cost": 0.28823080000000006,
+                        "problem_name": "swiss-2024-11-selection",
+                        "variation_parameters": {
+                            "m": 5,
+                            "n": 5,
+                            "max_moves": 50
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.31795170000000006,
+                        "problem_name": "swiss-2024-11-selection",
+                        "variation_parameters": {
+                            "m": 4,
+                            "n": 6,
+                            "max_moves": 44
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.2971859,
+                        "problem_name": "swiss-2024-11-selection",
+                        "variation_parameters": {
+                            "m": 4,
+                            "n": 5,
+                            "max_moves": 30
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0082995,
+                        "problem_name": "swiss-2024-12-selection",
+                        "variation_parameters": {}
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.5091658,
+                        "problem_name": "swiss-2024-3",
+                        "variation_parameters": {
+                            "k": 5,
+                            "min_val": 24
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.27702730000000003,
+                        "problem_name": "swiss-2024-3",
+                        "variation_parameters": {
+                            "k": 17,
+                            "min_val": 72
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.3311396,
+                        "problem_name": "swiss-2024-3",
+                        "variation_parameters": {
+                            "k": 9,
+                            "min_val": 40
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.6811464,
+                        "problem_name": "swiss-2024-3",
+                        "variation_parameters": {
+                            "k": 6,
+                            "min_val": 28
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0602052,
+                        "problem_name": "swiss-2024-5-selection",
+                        "variation_parameters": {
+                            "n": 10
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0378345,
+                        "problem_name": "swiss-2024-5-selection",
+                        "variation_parameters": {
+                            "n": 22
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0400466,
+                        "problem_name": "swiss-2024-5-selection",
+                        "variation_parameters": {
+                            "n": 14
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.039410799999999996,
+                        "problem_name": "swiss-2024-5-selection",
+                        "variation_parameters": {
+                            "n": 11
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.017847500000000002,
+                        "problem_name": "swiss-2024-8-selection",
+                        "variation_parameters": {}
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0279224,
+                        "problem_name": "tot-2005-1",
+                        "variation_parameters": {
+                            "n": 15
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0230472,
+                        "problem_name": "tot-2005-1",
+                        "variation_parameters": {
+                            "n": 21
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0176561,
+                        "problem_name": "tot-2005-1",
+                        "variation_parameters": {
+                            "n": 17
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.145365,
+                        "problem_name": "tot-2005-1",
+                        "variation_parameters": {
+                            "n": 18
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.5679784000000001,
+                        "problem_name": "tot-2018-1",
+                        "variation_parameters": {
+                            "n": 10
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.3858382,
+                        "problem_name": "tot-2018-1",
+                        "variation_parameters": {
+                            "n": 17
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.20346370000000003,
+                        "problem_name": "tot-2018-1",
+                        "variation_parameters": {
+                            "n": 9
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.3503511,
+                        "problem_name": "tot-2018-1",
+                        "variation_parameters": {
+                            "n": 6
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.050142400000000004,
+                        "problem_name": "usamo-2000-4",
+                        "variation_parameters": {
+                            "n": 10,
+                            "k": 18
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0535073,
+                        "problem_name": "usamo-2000-4",
+                        "variation_parameters": {
+                            "n": 22,
+                            "k": 41
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0667623,
+                        "problem_name": "usamo-2000-4",
+                        "variation_parameters": {
+                            "n": 14,
+                            "k": 26
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.16601090000000002,
+                        "problem_name": "usamo-2000-4",
+                        "variation_parameters": {
+                            "n": 11,
+                            "k": 18
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.08517080000000002,
+                        "problem_name": "usamo-2001-1",
+                        "variation_parameters": {
+                            "n": 23
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.13802910000000002,
+                        "problem_name": "usamo-2001-1",
+                        "variation_parameters": {
+                            "n": 26
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.054380700000000004,
+                        "problem_name": "usamo-2001-1",
+                        "variation_parameters": {
+                            "n": 24
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.08256270000000002,
+                        "problem_name": "usamo-2001-1",
+                        "variation_parameters": {
+                            "n": 27
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1355926,
+                        "problem_name": "usamo-2002-5",
+                        "variation_parameters": {
+                            "a": 22,
+                            "b": 15
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.160171,
+                        "problem_name": "usamo-2002-5",
+                        "variation_parameters": {
+                            "a": 37,
+                            "b": 22
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.27939780000000003,
+                        "problem_name": "usamo-2002-5",
+                        "variation_parameters": {
+                            "a": 37,
+                            "b": 35
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.8346228,
+                        "problem_name": "usamo-2002-5",
+                        "variation_parameters": {
+                            "a": 40,
+                            "b": 37
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "Error parsing solution",
+                        "cost": 0.1541606,
+                        "problem_name": "usamo-2005-1",
+                        "variation_parameters": {
+                            "a": 123,
+                            "b": 456,
+                            "c": 789,
+                            "d": 101
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "Error parsing solution",
+                        "cost": 0.2496637,
+                        "problem_name": "usamo-2005-1",
+                        "variation_parameters": {
+                            "a": 90,
+                            "b": 140,
+                            "c": 13,
+                            "d": 19
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.1728133,
+                        "problem_name": "usamo-2005-1",
+                        "variation_parameters": {
+                            "a": 140,
+                            "b": 140,
+                            "c": 30,
+                            "d": 94
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "Error parsing solution",
+                        "cost": 0.2265296,
+                        "problem_name": "usamo-2005-1",
+                        "variation_parameters": {
+                            "a": 72,
+                            "b": 30,
+                            "c": 52,
+                            "d": 43
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.020802100000000004,
+                        "problem_name": "usamo-2006-2",
+                        "variation_parameters": {
+                            "k": 12,
+                            "N": 3924
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.024504700000000004,
+                        "problem_name": "usamo-2006-2",
+                        "variation_parameters": {
+                            "k": 22,
+                            "N": 22814
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.018243500000000003,
+                        "problem_name": "usamo-2006-2",
+                        "variation_parameters": {
+                            "k": 14,
+                            "N": 6118
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.030629500000000004,
+                        "problem_name": "usamo-2006-2",
+                        "variation_parameters": {
+                            "k": 11,
+                            "N": 3058
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0412434,
+                        "problem_name": "usamo-2006-4",
+                        "variation_parameters": {
+                            "n": 51
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.06330279999999999,
+                        "problem_name": "usamo-2006-4",
+                        "variation_parameters": {
+                            "n": 74
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0230505,
+                        "problem_name": "usamo-2006-4",
+                        "variation_parameters": {
+                            "n": 58
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.2777951,
+                        "problem_name": "usamo-2006-4",
+                        "variation_parameters": {
+                            "n": 53
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0353617,
+                        "problem_name": "usamo-2017-1",
+                        "variation_parameters": {
+                            "k": 10
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.04277570000000001,
+                        "problem_name": "usamo-2017-1",
+                        "variation_parameters": {
+                            "k": 79
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.05166810000000001,
+                        "problem_name": "usamo-2017-1",
+                        "variation_parameters": {
+                            "k": 47
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0282161,
+                        "problem_name": "usamo-2017-1",
+                        "variation_parameters": {
+                            "k": 37
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.5758676,
+                        "problem_name": "usamts-1998-1-4",
+                        "variation_parameters": {
+                            "d": 1
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.4903041,
+                        "problem_name": "usamts-1998-1-4",
+                        "variation_parameters": {
+                            "d": 8
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.31659760000000003,
+                        "problem_name": "usamts-1998-1-4",
+                        "variation_parameters": {
+                            "d": 4
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.47784000000000004,
+                        "problem_name": "usamts-1998-1-4",
+                        "variation_parameters": {
+                            "d": 2
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.7987661000000001,
+                        "problem_name": "usamts-1998-4-1",
+                        "variation_parameters": {
+                            "a": 8,
+                            "b": 9,
+                            "n": 31
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.5358892,
+                        "problem_name": "usamts-1998-4-1",
+                        "variation_parameters": {
+                            "a": 8,
+                            "b": 9,
+                            "n": 26
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.41955870000000006,
+                        "problem_name": "usamts-1998-4-1",
+                        "variation_parameters": {
+                            "a": 4,
+                            "b": 3,
+                            "n": 33
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.5112349,
+                        "problem_name": "usamts-1998-4-1",
+                        "variation_parameters": {
+                            "a": 2,
+                            "b": 3,
+                            "n": 27
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.08414780000000001,
+                        "problem_name": "usamts-1999-1-2",
+                        "variation_parameters": {
+                            "k": 1999
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.10030460000000002,
+                        "problem_name": "usamts-1999-1-2",
+                        "variation_parameters": {
+                            "k": 914
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "Error parsing solution",
+                        "cost": 0.058894,
+                        "problem_name": "usamts-1999-1-2",
+                        "variation_parameters": {
+                            "k": 187
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0933383,
+                        "problem_name": "usamts-1999-1-2",
+                        "variation_parameters": {
+                            "k": 933
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.2348665,
+                        "problem_name": "usamts-2001-3-3",
+                        "variation_parameters": {
+                            "n": 21
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_LENGTH",
+                        "cost": 0.13995190000000002,
+                        "problem_name": "usamts-2001-3-3",
+                        "variation_parameters": {
+                            "n": 70
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.574233,
+                        "problem_name": "usamts-2001-3-3",
+                        "variation_parameters": {
+                            "n": 38
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.1689193,
+                        "problem_name": "usamts-2001-3-3",
+                        "variation_parameters": {
+                            "n": 28
+                        }
+                    },
+                    {
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
+                        "cost": 0.4158748,
+                        "problem_name": "usamts-2001-4-4",
+                        "variation_parameters": {
+                            "k": 9
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.2096105,
+                        "problem_name": "usamts-2001-4-4",
+                        "variation_parameters": {
+                            "k": 8
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.12217810000000001,
+                        "problem_name": "usamts-2001-4-4",
+                        "variation_parameters": {
+                            "k": 4
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.061299700000000006,
+                        "problem_name": "usamts-2001-4-4",
+                        "variation_parameters": {
+                            "k": 2
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.14610420000000002,
+                        "problem_name": "usamts-2002-1-2",
+                        "variation_parameters": {
+                            "k": 10
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0929797,
+                        "problem_name": "usamts-2002-1-2",
+                        "variation_parameters": {
+                            "k": 11
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.06641910000000001,
+                        "problem_name": "usamts-2002-1-2",
+                        "variation_parameters": {
+                            "k": 7
+                        }
+                    },
+                    {
+                        "correct": true,
+                        "error": "CheckerTag.CORRECT",
+                        "cost": 0.0669295,
+                        "problem_name": "usamts-2002-1-2",
+                        "variation_parameters": {
+                            "k": 5
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

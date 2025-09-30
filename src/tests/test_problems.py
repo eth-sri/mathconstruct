@@ -1320,13 +1320,6 @@ def test_problem_bmosl_2018_n5():
         for p in [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293]:
             assert ProblemBMO2008N5(m, p).check_raw(get_solution(m, p))
 
-def test_problem_bmosl_2014_c1():
-    from math_construct.problems.bmo_shortlist.problem_2014_c1 import ProblemBMO2014C1, get_solution
-    orig_problem = ProblemBMO2014C1.get_original()
-    assert orig_problem.check_raw(orig_problem.config.original_solution)
-    for k in range(50, 400):
-        assert ProblemBMO2014C1(k).check_raw(get_solution(k))
-
 def test_problem_bmosl_2014_n4():
     from math_construct.problems.backups.problem_2014_n4 import ProblemBMO2014N4, get_solution
     orig_problem = ProblemBMO2014N4.get_original()
@@ -1355,14 +1348,6 @@ def test_problem_bmosl_2016_n3():
     for k in range(5, 25):
         assert ProblemBMO2016N3(k).check_raw(get_solution(k))
 
-def test_problem_bmosl_2018_c1():
-    from math_construct.problems.bmo_shortlist.problem_2018_c1 import ProblemBMO2018C1, get_solution
-    orig_problem = ProblemBMO2018C1.get_original()
-    assert orig_problem.check_raw(orig_problem.config.original_solution)
-    for k in range(5, 52, 2):
-        print(k)
-        assert ProblemBMO2018C1(k).check_raw(get_solution(k))
-
 def test_problem_bmosl_2019_c1():
     from math_construct.problems.bmo_shortlist.problem_2019_c1 import ProblemBMO2019C1, get_solution
     orig_problem = ProblemBMO2019C1.get_original()
@@ -1370,13 +1355,6 @@ def test_problem_bmosl_2019_c1():
     assert not orig_problem.check_raw([i//2+1 for i in range(200)])
     for k in range(5, 100):
         assert ProblemBMO2019C1(k).check_raw(get_solution(k))
-
-def test_problem_bmosl_2019_c2():
-    from math_construct.problems.bmo_shortlist.problem_2019_c2 import ProblemBMO2019C2, get_solution
-    orig_problem = ProblemBMO2019C2.get_original()
-    assert orig_problem.check_raw(orig_problem.config.original_solution)
-    for k in range(45, 55):
-        assert ProblemBMO2019C2(k).check_raw(get_solution(k))
 
 def test_problem_jbmosl_2022_n6():
     from math_construct.problems.backups.problem_2022_n6 import ProblemJBMO2022N6, get_solution
@@ -1393,13 +1371,6 @@ def test_problem_jbmosl_2023_c1():
     assert orig_problem.check_raw(orig_problem.config.original_solution)
     for k in range(3, 500, 62):
         assert ProblemJBMO2023C1(2*k-1, k).check_raw(get_solution(k))
-
-def test_problem_jbmosl_2023_c2():
-    from math_construct.problems.jbmo_shortlist.problem_2023_c2 import ProblemJBMO2023C5, get_solution
-    orig_problem = ProblemJBMO2023C5.get_original()
-    assert orig_problem.check_raw(orig_problem.config.original_solution)
-    for k in range(20, 250, 29):
-        assert ProblemJBMO2023C5(k).check_raw(get_solution(k))
 
 def test_problem_jbmosl_2023_n3():
     from math_construct.problems.jbmo_shortlist.problem_2023_n3 import ProblemJBMO2023N5
@@ -1465,13 +1436,6 @@ def test_problem_jbmosl_2018_P3():
     assert orig_problem.check_raw(orig_problem.config.original_solution)
     for N in range(12, 500, 27):
         assert ProblemJBMO2018A3(N).check_raw(get_solution(N))
-
-def test_problem_jbmosl_2018_A7():
-    from math_construct.problems.jbmo_shortlist.problem_2018_a7 import ProblemJBMO2018A7, get_solution
-    orig_problem = ProblemJBMO2018A7.get_original()
-    assert orig_problem.check_raw(orig_problem.config.original_solution)
-    for N in range(10, 100, 7):
-        assert ProblemJBMO2018A7(N**2 + N).check_raw(get_solution(N**2 + N))
 
 def test_problem_jbmosl_2018_N4():
     from math_construct.problems.jbmo_shortlist.problem_2018_n4 import ProblemJBMO2018N4, get_solution

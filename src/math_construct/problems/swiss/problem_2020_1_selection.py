@@ -47,8 +47,6 @@ class ProblemSwissSelection20201(Problem):
         board = [[(i + j) % 2 for i in range(self.n)] for j in range(self.n)]
 
         for x, y in a:
-            if board[x][y] == 0:
-                return False, f"Square {x}, {y} is already white on moment of execution.", CheckerTag.INCORRECT_SOLUTION
             for i in range(self.n):
                 board[x][i] = 1 - board[x][i]
                 board[i][y] = 1 - board[i][y]

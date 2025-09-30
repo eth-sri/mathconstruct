@@ -95,8 +95,10 @@ class CoTSolver(Solver):
     def add_response(self, query, response):
         if isinstance(response, tuple) and response[0] is None:
             query.append({"role": "api_error", "content": str(response[1])})
-        else:
+        elif isinstance(response, str):
             query.append({"role": "assistant", "content": response})
+        else:
+            query.extend(response)
         return query
     
     def is_valid_trace(self, query):

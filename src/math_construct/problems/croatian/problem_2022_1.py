@@ -41,7 +41,7 @@ class Problem_HMO_2022_1(Problem):
     def check(self, a: list[float]):
         if len(a) != self.n:
             return False, f"List does not have exactly {self.n} elements", CheckerTag.INCORRECT_LENGTH
-        if any(x <= 1e-6 for x in a):
+        if not all(x > 0 for x in a):
             return False, f"All elements must be positive", CheckerTag.INCORRECT_FORMAT
         a = a + a
         cnt = 0

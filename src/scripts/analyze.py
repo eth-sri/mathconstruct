@@ -86,7 +86,7 @@ def analyze_run(run_dir, models_whitelist=None, problems_whitelist=None, no_pars
                 answer, is_correct, details = instance.parse_and_check(response)
 
                 if is_correct and not details.startswith("CheckerTag.CORRECT"):
-                    raise ValueError(f"Answer is not correct but details are {details}")
+                    raise ValueError(f"Answer is correct but details are {details}")
                 
                 type_error = parse_solution_errors(details, response)
 
@@ -188,6 +188,8 @@ def analyze_run(run_dir, models_whitelist=None, problems_whitelist=None, no_pars
                 f.write(f"{problem_name}\n")
                 for i in range(max_variations):
                     chek = set()
+                    if i >= len(results[models[0]].get(problem_name, [])):
+                        continue
                     for model in models:
                         chek.add(str(results[model][problem_name][i]["problem"]["param_values"]))
                     assert(len(chek) == 1)

@@ -24,13 +24,15 @@ def get_solution(N: int, M: int) -> list[tuple[int]]:
             m += 1
     seq = []
     for triple in pythagorean_triples:
-        example = [triple[0]**(M-1), triple[0]**(M-2)*triple[1]]
+        example = [(triple[0]**(M-1))**2, (triple[0]**(M-2)*triple[1])**2]
         for i in range(M-2):
-            example.append(triple[0]**(M-3-i)*triple[1]*triple[2]**(i+1))
+            example.append((triple[0]**(M-3-i)*triple[1]*triple[2]**(i+1))**2)
         seq.append(tuple(example))
     return seq
 
 def is_square(num: int) -> bool:
+  if num == 1:
+      return True
   x = num // 2
   seen = set([x])
   while x * x != num:
@@ -75,7 +77,13 @@ class ProblemBaltic2005P19(Problem):
         for i, entry in enumerate(x):
             if len(entry) != self.M:
                 return False, f"Each sequence should contain {self.M} numbers, received {len(entry)}", CheckerTag.INCORRECT_FORMAT
-            entry_sum = sum([num**2 for num in entry])
+            for num in entry:
+                if not (isinstance(num, int) and num > 0):
+                    return False, f"All numbers should be positive integers, found {num}", CheckerTag.INCORRECT_FORMAT
+                if not is_square(num):
+                    return False, f"Number {num} in entry {entry} is not a square number", CheckerTag.INCORRECT_SOLUTION
+            
+            entry_sum = sum([num for num in entry])
             if not is_square(entry_sum):
                 return False, f"Sum of the squares of {entry} - {entry_sum} is not a square number", CheckerTag.INCORRECT_SOLUTION
             

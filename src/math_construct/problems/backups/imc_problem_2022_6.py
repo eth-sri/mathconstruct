@@ -46,7 +46,6 @@ def brute_force(p) -> list[int]:
         random.shuffle(numbers)
         if check_permutation(numbers, p):
             found = True
-            print("Attempts: ", attempts)
             return numbers
         attempts += 1
     return None

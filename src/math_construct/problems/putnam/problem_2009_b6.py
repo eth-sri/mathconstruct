@@ -18,7 +18,7 @@ def get_solution(m: int, n: int) -> list[int]:
     while x < n:
         x *= 2
     a = [0, 1, 2*x+1, (x+1)**2, x**n+1, n*(x+1), x, n]
-    while len(a) < m:
+    while len(a) < m + 1:
         a.append(n)
     a = [x*p2 for x in a]
     return a
@@ -48,8 +48,8 @@ class Problem_Putnam2009B6(Problem):
     def check(self, x: list[int]) -> tuple[bool, str]:
         def is_power_of_2(n: int) -> bool:
             return n & (n-1) == 0
-        if len(x) != self.m:
-            return False, f"List of size {len(x)}, should be {self.m}", CheckerTag.INCORRECT_LENGTH
+        if len(x) != self.m + 1:
+            return False, f"List of size {len(x)}, should be {self.m + 1}", CheckerTag.INCORRECT_LENGTH
         if not all(isinstance(y, int) for y in x):
             return False, "All elements should be integers", CheckerTag.INCORRECT_FORMAT
         if x[0] != 0 or x[-1] != self.n:

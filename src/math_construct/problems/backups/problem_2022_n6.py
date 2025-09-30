@@ -49,7 +49,6 @@ class ProblemJBMO2022N6(Problem):
         return PROBLEM_TEMPLATE.format(n=self.n, k=int(1.5*self.n))
 
     def check(self, x: int) -> bool:
-        print(x)
         digits = list(map(int, str(x)))
 
         if len(str(x)) < int(1.5*self.n):

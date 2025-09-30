@@ -293,22 +293,25 @@ def get(id: str): #model>>problemname>>id
         responses = entry["response"]
         response_boxes = []
         for response in responses:
-            role, content = response["role"], response["content"]
-            if type(content) == list:
-                content = "\n".join(content)
+            role, content, type_ = response["role"], response["content"], response.get("type", "")
             response = sanitize_response(content)
             response_boxes.append(P(f"Role: {role}", cls="strong"))
 
-            # TODO hacky bugfixes for now
-            # find first ocucrence of ``` and if there is no python right after put it 
-            occ = response.find('```')
-            if occ != -1 and response[occ+3:occ+5] != 'py':
-                response = response[:occ+3] + 'python\n' + response[occ+3:]
-            occ = response.rfind('```')
-            if occ != -1 and response[occ-1:occ] != '\n':
-                response = response[:occ] + '\n' + response[occ:]
-
-            response_boxes.append(Div(response, cls=f"marked box response-box {role}"))
+            if role == 'code' or role == "tool" or type_ == "code_interpreter_call":
+                # try to parse it as a dict
+                try:
+                    response_dict = json.loads(response)
+                    if "tool_name" in response_dict and response_dict["tool_name"] == "execute_code":
+                        code = response_dict["tool_arguments"]["code"]
+                    else:
+                        code = response
+                except:
+                    code = response
+                response = code.replace('```python','').replace('```', '').strip()
+                response = Pre(Code(code), cls=f"language-python marked box response-box code")
+            else:
+                response = Div(response, cls=f"marked box response-box {role}")
+            response_boxes.append(response)
         return Div(*response_boxes)
 
 @rt("/view/{model}/{problem_name}")

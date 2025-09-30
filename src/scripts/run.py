@@ -229,7 +229,7 @@ def run(cfg, apis_restricted=None, models_restricted=None) -> None:
             )
 
         # Process problems in batches
-        batch_size = cfg.solver_batch_size if hasattr(cfg.solver, 'batch_size') else 10
+        batch_size = cfg.solver.batch_size if hasattr(cfg.solver, 'batch_size') else 10
 
         model_dir = os.path.join(run_dir, model_name.replace("/", "__"))
         os.makedirs(model_dir, exist_ok=True)

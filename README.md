@@ -1,8 +1,10 @@
-# MathConstruct: Challenging LLM Reasoning with Constructive Proofs
+# MathConstruct
 
 MathConstruct is a benchmarking framework for evaluating language models on constructive proofs. This README explains how to run models, analyze results, and reproduce findings from our paper.
 
 The project uses uv for package management.
+
+**Update September 2025:** We have performed additional verification on the problems in our benchmark. As a results, we removed 5 problems from the benchmark and made corrections to 5 verification functions.
 
 ## Installation
 
@@ -132,7 +134,7 @@ docker build -t mathconstruct-sandbox docker/
 Ensure Docker runs in rootless mode. You can enable Python-Augmented Reasoning in the config file.
 
 ## Reproducing results
-Raw results can be obtained by downloading the zip folder from (https://files.sri.inf.ethz.ch/mathconstruct/logs.zip)[https://files.sri.inf.ethz.ch/mathconstruct/logs.zip] and extracting the results in this folder. Analyze results with:
+Raw results are stored in `logs/`. Analyze results with:
 ```bash
 uv run python src/scripts/analyze.py --run logs/example-run
 ```
@@ -146,22 +148,11 @@ Specifically, the following folders correspond to the data in our paper:
 - `cot-rephrase`: Figure 6
 - `lengthstudy`: Figure 7
 
+To regenerate plots, use `notebooks/plot.ipynb` with `matplotlib`, `numpy`, `seaborn`, and `pandas`.
+
 ### Full Reproduction
 To reproduce results from scratch, set API keys and run:
 ```bash
 bash run.sh
 ```
 **Note:** This process may take several days and cost approximately $1000 USD.
-
-
-## Citation 
-
-```
-@article{balunovic2025mathconstruct, 
-        title={MathConstruct: Challenging LLM Reasoning with Constructive Proofs}, 
-        author={Mislav Balunović and Jasper Dekoninck and Nikola Jovanović and Ivo Petrov and Martin Vechev}, 
-        year={2025}, 
-        archivePrefix={arXiv}, 
-        primaryClass={cs.CL} 
-}
-```

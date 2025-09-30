@@ -47,12 +47,17 @@ class APIQuery:
         Returns:
             None
         """
+        self.openai_responses = ("gpt-5" in model)
+
         if "think" in model and api == "google":
             is_chat = False # think model cannot handle chat
             max_tokens_param = "max_output_tokens"
-        if ("o1" in model or "o3" in model) and api == "openai":
+        if ("o1" in model or "o3" in model or "gpt-5" in model) and api == "openai":
             no_system_messages = True # o1 model cannot handle system messages
-            max_tokens_param = "max_completion_tokens"
+            if not self.openai_responses:
+                max_tokens_param = "max_completion_tokens"
+            else:
+                max_tokens_param = "max_output_tokens"
             if "top_p" in kwargs:
                 del kwargs["top_p"]
             if "top_k" in kwargs:
@@ -71,7 +76,10 @@ class APIQuery:
         if max_tokens is not None:
             self.kwargs[max_tokens_param] = max_tokens
         if reasoning_effort is not None:
-            self.kwargs["reasoning_effort"] = reasoning_effort
+            if not self.openai_responses:
+                self.kwargs["reasoning_effort"] = reasoning_effort
+            else:
+                self.kwargs["reasoning"] = {"effort": reasoning_effort, "summary": "auto"}
 
         self.timeout = timeout
         self.max_retries = max_retries
@@ -154,7 +162,7 @@ class APIQuery:
         elif self.no_system_messages:
             # convert system role to user role
             query = [{
-                "role": message["role"] if message["role"] != "system" else "user",
+                "role": message["role"] if message["role"] != "system" else "developer",
                 "content": message["content"]
             } for message in query]
         return query
@@ -164,7 +172,7 @@ class APIQuery:
         return cost / (10 ** 6)
 
     def run_queries(self, queries):
-        logger.info(f"Running {len(queries)} queries.")
+        logger.info(f"Running {len(queries)} queries with {self.concurrent_requests} requests.")
         with ThreadPoolExecutor(max_workers=self.concurrent_requests) as executor:
             future_to_index = {
                 executor.submit(self.run_query_with_retry, query): i
@@ -217,7 +225,10 @@ class APIQuery:
     def run_query(self, query):
         query = self.prepare_query(query)
         if self.api == "openai":
-            return self.openai_query(query)
+            if self.openai_responses:
+                return self.openai_responses_query(query)
+            else:
+                return self.openai_query(query)
         elif self.api == "together":
             return self.together_query(query)
         elif self.api == "google":
@@ -280,4 +291,42 @@ class APIQuery:
             "output": output,
             "input_tokens": response.usage.prompt_tokens,
             "output_tokens": response.usage.completion_tokens,
+        }
+
+    def openai_responses_query(self, query):
+        client = OpenAI(api_key=self.api_key, base_url=self.base_url, 
+                        timeout=self.timeout, max_retries=0)
+        
+        response = client.responses.create(
+            model=self.model,
+            tools=None, # no tools
+            store=False, # do not store 
+            input=query,
+            temperature=self.temperature,
+            **self.kwargs
+        )
+
+        all_out_msgs = [] 
+        for out in response.output:
+            if out.type == "message":
+                for c in out.content:
+                    if c.type == "output_text":
+                        all_out_msgs.append({"role": "assistant", "content": c.text})
+            elif out.type == "reasoning":
+                summary = "<summary>\n"
+                for thought in out.summary:
+                    if thought.text is not None:
+                        summary += "<thought>" + "\n" + thought.text + "\n" + "</thought>\n"
+                summary += "</summary>\n"
+                all_out_msgs.append({"role": "assistant", "type": "reasoning", "content": summary, "id": out.id})
+            else:
+                raise ValueError(f"Unknown output type {out.type}.")
+        
+        if len(all_out_msgs) == 0:
+            all_out_msgs.append({"role": "assistant", "content": ""})
+    
+        return {
+            "output": all_out_msgs,
+            "input_tokens": response.usage.input_tokens,
+            "output_tokens": response.usage.output_tokens,
         }
