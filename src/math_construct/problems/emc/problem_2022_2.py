@@ -41,10 +41,14 @@ class ProblemEMC20222(Problem):
         return PROBLEM_TEMPLATE.format(n=self.n)
 
     def check(self, x: list[list[int]]) -> bool:
-        checker_format = self.check_format(x, expected_length=self.n, is_unique=True, is_integer=True)
+        checker_format = self.check_format(x, expected_length=self.n, is_unique=True, is_integer=True, min_val_exclusive=0)
         if not checker_format[0]:
             return checker_format
+        if len(set(seq[0] for seq in x)) != len(x):
+            return False, "Lovely numbers are not distinct", CheckerTag.INCORRECT_SOLUTION
         for seq in x:
+            if len(seq) < 2:
+                return False, f"At least one divisor is required: {seq}", CheckerTag.INCORRECT_SOLUTION
             product = math.prod(seq[1:])
             if product != seq[0]:
                 return False, f"Product of divisors is not equal to the lovely number: {seq}", CheckerTag.INCORRECT_SOLUTION

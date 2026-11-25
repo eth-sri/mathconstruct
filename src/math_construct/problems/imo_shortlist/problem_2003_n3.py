@@ -48,6 +48,8 @@ class Problem2003N3(Problem):
             if len(x) != 2:
                 return False, f"List element {x} is not a pair", CheckerTag.INCORRECT_FORMAT
             a, b = x
+            if not all(isinstance(v, int) and not isinstance(v, bool) for v in x):
+                return False, f"Pair {x} is not a pair of integers", CheckerTag.INCORRECT_FORMAT
             if a <= b or b <= 1:
                 return False, f"Pair {x} does not satisfy a>b>1", CheckerTag.INCORRECT_SOLUTION
             top = a*a 

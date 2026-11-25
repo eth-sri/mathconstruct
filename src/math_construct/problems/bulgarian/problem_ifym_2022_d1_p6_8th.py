@@ -43,6 +43,8 @@ class ProblemIFYM_2022_P6_1_8(Problem):
             return False, f"Sequence should contain {self.N} elements", CheckerTag.INCORRECT_LENGTH
 
         for num in x:
+            if type(num) != int or num <= 0:
+                return False, "All numbers must be natural numbers", CheckerTag.INCORRECT_FORMAT
             if num % self.n != 0:
                 return False, f"All numbers in the sequence must be divisible by {self.n}", CheckerTag.INCORRECT_SOLUTION
         
@@ -65,6 +67,8 @@ class ProblemIFYM_2022_P6_1_8(Problem):
                     return False, f"Number {y_str} cannot be achieved from {x_str} by removing 1 digit", CheckerTag.INCORRECT_SOLUTION
                 else:
                     shift += 1
+            if shift == 0 and x_str[-1] == '0':
+                return False, f"Number {y_str} cannot be achieved from {x_str} by removing 1 non-zero digit", CheckerTag.INCORRECT_SOLUTION
 
         return True, "OK", CheckerTag.CORRECT
         

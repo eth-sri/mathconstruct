@@ -40,6 +40,8 @@ class ProblemSwiss2021R2Z1(Problem):
         if len(set(x)) != len(x):
             return False, f"Example numbers should be distinct", CheckerTag.INCORRECT_FORMAT
         
+        if not all(isinstance(v, int) and v > 0 for v in x):
+            return False, "Example numbers should be positive integers", CheckerTag.INCORRECT_FORMAT
         total_sum = sum(x)
 
         for entry in x:

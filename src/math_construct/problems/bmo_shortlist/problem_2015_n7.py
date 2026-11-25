@@ -78,6 +78,8 @@ class ProblemBMO2015N7(Problem):
         for i, entry in enumerate(x):
             if len(entry) != 4:
                 return False, f"Expected examples of length 4, received {len(entry)}", CheckerTag.INCORRECT_FORMAT
+            if any(type(e) != int or e <= 0 for e in entry) or len(set(entry)) != 4:
+                return False, f"Each example must consist of 4 different positive integers", CheckerTag.INCORRECT_SOLUTION
             x[i] = tuple(sorted(entry))
             
         if len(x) != len(set(x)):

@@ -62,6 +62,8 @@ class ProblemSerbianTst2022_3(Problem):
         if len(set(tuple(sol) for sol in solution)) != len(solution):
             return False, "All elements should be unique", CheckerTag.INCORRECT_FORMAT
 
+        if len(set(sol[0] for sol in solution if len(sol) > 0)) != len(solution):
+            return False, "The numbers n should be distinct", CheckerTag.INCORRECT_FORMAT
         # format 
         for sol in solution:
             if len(sol) == 0: 

@@ -3,7 +3,8 @@ PROBLEM_TEMPLATE = TEMPLATES["croatian/problem_2020_4.py"]
 
 import random
 import math
-from sympy import divisors
+from sympy import divisors, divisor_sigma
+from fractions import Fraction
 from math_construct.problems.problem import Problem, ProblemConfig, Tag, CheckerTag
 from math_construct.utils import get_latex_array
 from math_construct.templates import get_list_template
@@ -58,10 +59,14 @@ class Problem_HMO_2020_4(Problem):
         for i in range(self.n):
             if len(x[i]) != 2:
                 return False, f"Tuple {x[i]} does not have exactly 2 elements", CheckerTag.INCORRECT_FORMAT
+            if not all(isinstance(v, int) and v > 0 for v in x[i]):
+                return False, f"Tuple {x[i]} must contain positive integers", CheckerTag.INCORRECT_FORMAT
             if len(str(x[i][0])) < i+1 or len(str(x[i][1])) < i+1:
                 return False, f"Elements of tuple {x[i]} do not have at least {i+1} digits", CheckerTag.INCORRECT_FORMAT
-            if abs(get_sum(x[i][0]) - get_sum(x[i][1])) > 1e-3:
+            if Fraction(divisor_sigma(x[i][0]), x[i][0]) != Fraction(divisor_sigma(x[i][1]), x[i][1]):
                 return False, f"Sum of reciprocals of divisors of {x[i][0]} and {x[i][1]} are not the same", CheckerTag.INCORRECT_SOLUTION
+        if len(set(tuple(t) for t in x)) != self.n:
+            return False, "Tuples are not distinct", CheckerTag.INCORRECT_SOLUTION
         return True, "OK", CheckerTag.CORRECT
 
     @staticmethod

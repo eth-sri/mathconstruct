@@ -75,7 +75,9 @@ class Problem_USAMO_2005_1(Problem):
         return PROBLEM_TEMPLATE.format(a=self.a, b=self.b, c=self.c, d=self.d)
 
     def check(self, a: list[int]) -> tuple[bool, str, CheckerTag]:
-        if set(a) != set(list(range(1, len(divisors(self.n))))):
+        if len(a) > 1 and a[0] == a[-1]:
+            a = a[:-1]  # allow repeating the first index to close the cycle
+        if sorted(a) != list(range(1, len(divisors(self.n)))):
             return False, "All elements should be integers between 1 and num_divisors(n)", CheckerTag.INCORRECT_FORMAT
         a = ids_to_perm(a, divisors(self.n))
         if not all(isinstance(y, int) for y in a):

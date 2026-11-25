@@ -47,10 +47,13 @@ class Problem2000C4(Problem):
         for row in x:
             if len(row) != self.n:
                 return False, f"Row of size {len(row)}, should be {self.n}", CheckerTag.INCORRECT_LENGTH
+        if any(y not in (0, 1) for row in x for y in row):
+            return False, "Entries must be 0 or 1", CheckerTag.INCORRECT_FORMAT
         cnt_1 = sum(row.count(1) for row in x)
         if cnt_1 != 4*(self.n-self.k):
             return False, f"Number of 1s is {cnt_1}, should be {4*(self.n-self.k)}", CheckerTag.INCORRECT_SOLUTION
         for i in range(self.n):
+            row = x[i]
             s = "".join(str(y) for y in row)
             max_group = max(len(g) for g in s.split("1"))
             if max_group >= self.k:

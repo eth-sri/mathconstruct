@@ -48,6 +48,8 @@ class Problem2003N2(Problem):
         if len(set(solution)) < len(solution):
             return False, "List contains duplicates", CheckerTag.INCORRECT_FORMAT
         for a in solution: 
+            if not isinstance(a, int) or a <= 0:
+                return False, f"Number {a} is not a positive integer", CheckerTag.INCORRECT_FORMAT
             if not self.is_good(a):
                 return False, f"Number {a} is not good", CheckerTag.INCORRECT_SOLUTION
         return True, "OK", CheckerTag.CORRECT

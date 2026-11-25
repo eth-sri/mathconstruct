@@ -28,7 +28,7 @@ def get_solution(number: int) -> List:
     number_from_pythogras = number // 2 if number % 2 == 0 else (number - 1) // 2
     fractions = []
     for triple in pythegorean_triples[:number_from_pythogras]:
-        fractions.append(Fraction(triple[1] - triple[0], triple[2]))
+        fractions.append(Fraction(abs(triple[1] - triple[0]), triple[2]))
         fractions.append(Fraction(triple[1] + triple[0], triple[2]))
     if number % 2 == 1:
         fractions.append(Fraction(1, 1))
@@ -59,6 +59,8 @@ class ProblemEMC20163(Problem):
         checker_format = self.check_format(x, expected_length=self.n, is_unique=True)
         if not checker_format[0]:
             return checker_format
+        if any(f <= 0 for f in x):
+            return False, "All numbers must be positive", CheckerTag.INCORRECT_FORMAT
         sum_of_squares = sum(f*f for f in x)
         if abs(sum_of_squares - self.n) > 1e-6:
             return False, f"Sum of squares is {sum_of_squares}, should be {self.n}", CheckerTag.INCORRECT_SOLUTION

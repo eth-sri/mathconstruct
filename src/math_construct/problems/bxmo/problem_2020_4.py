@@ -45,7 +45,7 @@ class ProblemBxMO20204(Problem):
         divisors_number = divisors(a)
         count = 0
         for divisor in divisors_number:
-            if math.sqrt(a) < divisor < 2 * math.sqrt(a):
+            if a < divisor * divisor < 4 * a:
                 count += 1
         if not count == self.n:
             return False, f"The number should have exactly {self.n} close divisors, but has {count}.", CheckerTag.INCORRECT_SOLUTION

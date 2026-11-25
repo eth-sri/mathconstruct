@@ -59,6 +59,13 @@ class Problem10(Problem):
                 y = x[:i] + x[i+1] + x[i] + x[i+2:]
                 if y in s and y != x:
                     return False, f"{x} and {y} are in the list and differ by a single transposition", CheckerTag.INCORRECT_SOLUTION
+        recv = {}
+        for x in answer:
+            if not all(c in '0123456789'[:self.k + 1] for c in x):
+                return False, f"{x} uses digits outside 0-{self.k}", CheckerTag.INCORRECT_SOLUTION
+            for y in {x} | {x[:i] + x[i+1] + x[i] + x[i+2:] for i in range(2)}:
+                if recv.setdefault(y, x) != x:
+                    return False, f"received {y} is ambiguous between {recv[y]} and {x}", CheckerTag.INCORRECT_SOLUTION
         if len(answer) != self.m:
             return False, f"List of size {len(answer)}, should be {self.m}", CheckerTag.INCORRECT_SOLUTION
         return True, "OK", CheckerTag.CORRECT

@@ -48,6 +48,8 @@ class ProblemBulPMS2008P8_3(Problem):
         if len(set([tuple(el) for el in x])) != len(x):
             return False, "All examples should be unique", CheckerTag.INCORRECT_FORMAT
         
+        if len(set(el[0] for el in x)) != len(x):
+            return False, "All values of n should be distinct", CheckerTag.INCORRECT_FORMAT
         for i, entry in enumerate(x):
             if len(entry) != 2:
                 return False, f"Each sequence should contain a pair of example $n$ and an n-digit number", CheckerTag.INCORRECT_FORMAT

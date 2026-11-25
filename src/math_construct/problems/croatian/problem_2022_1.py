@@ -46,7 +46,8 @@ class Problem_HMO_2022_1(Problem):
         a = a + a
         cnt = 0
         for i in range(self.n):
-            if abs(a[i]*a[i+3] - (a[i]*a[i+1] + a[i+1]*a[i+2] + a[i+2]*a[i+3])) < 1e-3:
+            lhs = a[i]*a[i+3]; rhs = a[i]*a[i+1] + a[i+1]*a[i+2] + a[i+2]*a[i+3]
+            if abs(lhs - rhs) < 1e-3 * min(1, max(abs(lhs), abs(rhs))):
                 cnt += 1
         if cnt < self.m:
             return False, f"The equality holds only for {cnt} indices, but need {self.m}", CheckerTag.INCORRECT_SOLUTION

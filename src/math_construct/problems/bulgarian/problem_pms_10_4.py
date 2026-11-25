@@ -78,14 +78,20 @@ class ProblemBulPMS20204P10_4(Problem):
 
         vertices = x[0]
         edges = x[1]
+        if any(type(v) != int or v <= 0 for v in vertices) or len(set(vertices)) != len(vertices):
+            return False, "Vertex labels must be distinct natural numbers", CheckerTag.INCORRECT_SOLUTION
 
         for i, edge in enumerate(edges):
             if len(edge) != 2 or edge[0] > self.N or edge[0] < 1 or edge[1] > self.N or edge[1] < 1:
                 return False, f"Edge entry should contain a pair of valid indices", CheckerTag.INCORRECT_SOLUTION
-            edges[i] = tuple(edge)
+            if edge[0] == edge[1]:
+                return False, "Self-loops are not edges", CheckerTag.INCORRECT_SOLUTION
+            edges[i] = tuple(sorted(edge))
             if vertices[edge[0]-1] % vertices[edge[1]-1] != 0 and vertices[edge[1]-1] % vertices[edge[0]-1] != 0:
                 return False, f"Vertices {edge[0]} and {edge[1]} should not be connected but are.", CheckerTag.INCORRECT_SOLUTION
         edge_set = set(edges)
+        if len(edge_set) != len(edges):
+            return False, "Duplicate edges", CheckerTag.INCORRECT_SOLUTION
 
         for i in range(self.N):
             for j in range(i+1, self.N):

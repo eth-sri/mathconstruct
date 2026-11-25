@@ -49,11 +49,14 @@ class ProblemDutch20104(Problem):
         return abs(x - round(x)) < 1e-8
 
     def check(self, a: list[list[Fraction]]) -> bool:
-        checker_format = self.check_format(a, expected_length=self.k, is_unique=True, min_val_inclusive=0, max_val_inclusive=1)
+        checker_format = self.check_format(a, expected_length=self.k, is_unique=True, min_val_exclusive=0, max_val_exclusive=1)
         if not checker_format[0]:
             return checker_format
         solutions = list(set([tuple(x) for x in a]))
         for solution in solutions:
+            # with 0 < x, y < 1 both sums are positive, so the integers must be at least 1
+            if round(solution[0] + self.m * solution[1]) < 1 or round(self.m * solution[0] + solution[1]) < 1:
+                return False, f"The pair {solution} does not give positive integers.", CheckerTag.INCORRECT_SOLUTION
             if not self.is_almost_int(solution[0] + self.m * solution[1]):
                 return False, f"The pair {solution} does not satisfy the first condition.", CheckerTag.INCORRECT_SOLUTION
             if not self.is_almost_int(self.m * solution[0] + solution[1]):

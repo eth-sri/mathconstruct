@@ -46,6 +46,8 @@ class ProblemDutch20182(Problem):
         if not check_format[0]:
             return check_format
         
+        if len(set(frozenset(s) for s in solutions)) != len(solutions):
+            return False, "Colourings are not distinct", CheckerTag.INCORRECT_FORMAT
         for solution in solutions:
             if self.n not in solution:
                 return False, f"{self.n} should be red.", CheckerTag.INCORRECT_SOLUTION

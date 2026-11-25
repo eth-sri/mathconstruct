@@ -48,6 +48,8 @@ class Problem16(Problem):
             if math.gcd(x[i].numerator, x[i].denominator) != 1:
                 return False, f"Fraction {x[i]} is not irreducible", CheckerTag.INCORRECT_FORMAT
 
+        if any(f <= 0 for f in x):
+            return False, "Fractions must be positive", CheckerTag.INCORRECT_SOLUTION
         min_denom = min(f.denominator for f in x)
         for i in range(self.n):
             for j in range(i+1, self.n):

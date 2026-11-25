@@ -14,7 +14,7 @@ def get_solution(k: int) -> list[list[int]]:
     while len(ret) < k:
         i = len(ret) + 1
         # enforce b >= 10^i
-        x = math.ceil(math.sqrt((10**i-6)/3.0))
+        x = max(7 + i, math.ceil(math.sqrt((10**i-6)/3.0)))  # x>=8 keeps a>0, strictly increasing
         a = 3*x**2 - 18*x - 39
         b = 3*x**2 + 6
         c = 3*x**2 + 18*x + 33
@@ -46,6 +46,8 @@ class Problem12(Problem):
     def check(self, x: list[list[int]]) -> bool:
         def is_square(n: int) -> bool:
             return int(math.sqrt(n))**2 == n
+        if len(x) != self.k or any(not isinstance(v, int) or v <= 0 for q in x for v in q):
+            return False, "Need exactly k quadruples of positive integers", CheckerTag.INCORRECT_SOLUTION
         if len(set(tuple(a) for a in x)) != self.k:
             return False, f"Number of unique quadruples is {len(set(tuple(a) for a in x))}, should be {self.k}", CheckerTag.INCORRECT_SOLUTION
         for i, (a, b, c, d) in enumerate(x):

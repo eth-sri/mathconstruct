@@ -62,7 +62,9 @@ class Problem_HMO_2014_2(Problem):
     def check(self, a: list[list[int]]):
         if len(a) != self.N or any(len(row) != self.N for row in a):
             return False, f"Matrix is not {self.N}x{self.N}", CheckerTag.INCORRECT_FORMAT
-        all_colors = set([x for row in a for x in row])
+        if any(a[i][j] != a[j][i] for i in range(self.N) for j in range(self.N)):
+            return False, "Matrix must be symmetric (one color per side/diagonal)", CheckerTag.INCORRECT_FORMAT
+        all_colors = set([a[i][j] for i in range(self.N) for j in range(self.N) if i != j])
         if len(all_colors) != self.M:
             return False, f"Matrix has {len(all_colors)} different colors, but needs exactly {self.M} colors", CheckerTag.INCORRECT_SOLUTION
         for i in range(self.N):

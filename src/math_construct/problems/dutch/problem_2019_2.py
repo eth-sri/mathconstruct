@@ -63,7 +63,7 @@ class ProblemDutch20192(Problem):
 
     def check(self, a: list[list[int]]) -> bool:
         lengths = [len(x) for x in a]
-        if len(set(lengths)) != self.n:
+        if len(a) != self.n or len(set(lengths)) != self.n:
             return False, f"There should be {self.n} different configurations.", CheckerTag.INCORRECT_LENGTH
         checker_format = [self.check_format(sol, is_integer=True, is_square_matrix=True, min_val_inclusive=0, max_val_inclusive=1) for sol in a]
         for is_valid, reason, tag in checker_format:

@@ -52,7 +52,9 @@ class Problem2011A1(Problem):
             return False, f"Some list element is not a 4-tuple", CheckerTag.INCORRECT_FORMAT
 
         # assert uniqueness
-        if len(set(tuple(a) for a in solution)) != len(solution):
+        if not all(isinstance(ai, int) for a in solution for ai in a):
+            return False, "All elements should be integers", CheckerTag.INCORRECT_FORMAT
+        if len(set(frozenset(a) for a in solution)) != len(solution):
             return False, "All elements should be unique", CheckerTag.INCORRECT_FORMAT
         # conditions 
         for a in solution: 

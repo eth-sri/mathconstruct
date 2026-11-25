@@ -38,6 +38,8 @@ class Problem21(Problem):
             return False, f"List of size {len(a)}, should be {self.n}", CheckerTag.INCORRECT_LENGTH
         if not all(isinstance(x, int) for x in a):
             return False, "All elements should be integers", CheckerTag.INCORRECT_FORMAT
+        if any(x <= 0 for x in a) or len(set(a)) != self.n:
+            return False, "Integers must be distinct and positive", CheckerTag.INCORRECT_SOLUTION
         sum = 0
         for i in range(self.n):
             sum += Fraction(a[i], a[(i+1)%self.n])

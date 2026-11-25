@@ -33,6 +33,8 @@ class Problem7(Problem):
     def check(self, x: list[int]):
         if not all(isinstance(y, int) for y in x):
             return False, "All elements should be integers", CheckerTag.INCORRECT_FORMAT
+        if len(x) != 4 or any(y <= 1 for y in x):
+            return False, "Need four integers greater than 1", CheckerTag.INCORRECT_SOLUTION
         a, b, c, d = x
         if a*b*c*d != int("1"*self.k + "2"*self.k):
             return False, f"{a}*{b}*{c}*{d} does not equal {self.k} digits of 1 followed by {self.k} digits of 2", CheckerTag.INCORRECT_SOLUTION            

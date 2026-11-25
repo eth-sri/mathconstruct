@@ -75,6 +75,8 @@ class ProblemBaltic2005P19(Problem):
             return False, f"Examples should be unique", CheckerTag.INCORRECT_FORMAT
         
         for i, entry in enumerate(x):
+            if len(set(entry)) != len(entry):
+                return False, "Squares within a set must be different", CheckerTag.INCORRECT_FORMAT
             if len(entry) != self.M:
                 return False, f"Each sequence should contain {self.M} numbers, received {len(entry)}", CheckerTag.INCORRECT_FORMAT
             for num in entry:

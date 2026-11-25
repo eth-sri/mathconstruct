@@ -10,7 +10,19 @@ from math_construct.templates import get_matrix_template
 import itertools
 
 
+# Valid tournaments for n = 8..12 (the inductive extension below breaks "exactly one" for n >= 8).
+LARGER_SOLUTIONS = {
+    8: [[0, 0, 0, 0, 1, 0, 1, 1], [1, 0, 1, 0, 0, 1, 1, 0], [1, 0, 0, 1, 0, 1, 1, 0], [1, 1, 0, 0, 1, 1, 1, 1], [0, 1, 1, 0, 0, 1, 1, 1], [1, 0, 0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 1, 0, 0], [0, 1, 1, 0, 0, 0, 1, 0]],
+    9: [[0, 0, 1, 1, 1, 0, 0, 1, 1], [1, 0, 0, 0, 1, 0, 0, 0, 1], [0, 1, 0, 1, 1, 1, 0, 0, 1], [0, 1, 0, 0, 0, 0, 0, 1, 0], [0, 0, 0, 1, 0, 0, 0, 0, 0], [1, 1, 0, 1, 1, 0, 1, 1, 1], [1, 1, 1, 1, 1, 0, 0, 1, 0], [0, 1, 1, 0, 1, 0, 0, 0, 0], [0, 0, 0, 1, 1, 0, 1, 1, 0]],
+    10: [[0, 0, 0, 0, 1, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 1, 0, 0, 0, 1], [1, 1, 0, 1, 1, 0, 0, 1, 1, 1], [1, 1, 0, 0, 1, 0, 1, 1, 1, 0], [0, 1, 0, 0, 0, 0, 0, 1, 0, 0], [1, 0, 1, 1, 1, 0, 1, 1, 1, 1], [1, 1, 1, 0, 1, 0, 0, 1, 0, 0], [1, 1, 0, 0, 0, 0, 0, 0, 1, 1], [1, 1, 0, 0, 1, 0, 1, 0, 0, 1], [1, 0, 0, 1, 1, 0, 1, 0, 0, 0]],
+    11: [[0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1], [1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1], [1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1], [1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1], [1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1], [1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1], [1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1], [0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1], [0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1], [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]],
+    12: [[0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1], [1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1], [1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1], [1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1], [0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0], [1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1], [0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0], [1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1], [1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0]],
+}
+
+
 def get_solution(n):
+    if n in LARGER_SOLUTIONS:
+        return [row[:] for row in LARGER_SOLUTIONS[n]]
     seven_solution = [
             [0, 1, 0, 0, 0, 0, 0],
             [0, 0, 1, 1, 0, 0, 0],
@@ -67,6 +79,8 @@ class ProblemDutch20143(Problem):
             for j in range(i):
                 if a[i][j] != 1 - a[j][i]:
                     return False, f"Invalid Matrix at {(i,j)} or {(j,i)}: The game between team {i} and team {j} should have a winner, but entries do not sum to 1.", CheckerTag.INCORRECT_SOLUTION
+            if any(v not in (0, 1) for v in a[i]):
+                return False, "Entries must be 0 or 1", CheckerTag.INCORRECT_FORMAT
             if a[i][i] != 0:
                 return False, f"Invalid Matrix at {(i,i)}: The diagonal should be 0.", CheckerTag.INCORRECT_SOLUTION
 
@@ -79,12 +93,8 @@ class ProblemDutch20143(Problem):
             # each team lost exactly one game against a team that got less points in the final ranking
             if sum(row) == min_score:
                 continue
-            has_lost = False
-            for i, val in enumerate(row):
-                if val == 0 and all_scores[i] < sum(row):
-                    has_lost = True
-                    break
-            if not has_lost:
+            n_lost = sum(1 for i, val in enumerate(row) if i != index and val == 0 and all_scores[i] < sum(row))
+            if n_lost != 1:
                 return False, f"Team {index} should have lost exactly one game against a team that got less points in the final ranking.", CheckerTag.INCORRECT_SOLUTION
         return True, "OK", CheckerTag.CORRECT
 

@@ -51,7 +51,7 @@ class Problem_IMC_2018_6(Problem):
             for j in range(self.k):
                 if abs(i-j) <= 1:
                     continue
-                if np.linalg.norm(x[:, i] * x[:, j]) > 1e-3:
+                if abs(np.dot(x[:, i], x[:, j])) > 1e-3 * min(1, np.linalg.norm(x[:, i]) * np.linalg.norm(x[:, j])):
                     return False, f"Columns {i} and {j} are not orthogonal.", CheckerTag.INCORRECT_SOLUTION
         return True, "OK", CheckerTag.CORRECT
 

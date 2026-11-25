@@ -3,14 +3,14 @@
         "name": "logs/code-brute-force-infer",
         "model_results": {
             "claude-3-5-haiku-latest": {
-                "avg_acc": 0.11363636363636363,
+                "avg_acc": 0.09710743801652892,
                 "avg_cost": 7.248664,
-                "all_correct": 0.03305785123966942,
+                "all_correct": 0.024793388429752067,
                 "error_types": {
-                    "CheckerTag.INCORRECT_SOLUTION": 0.6398071625344353,
-                    "CheckerTag.INCORRECT_FORMAT": 0.08471074380165289,
+                    "CheckerTag.INCORRECT_SOLUTION": 0.6480716253443527,
+                    "CheckerTag.INCORRECT_FORMAT": 0.09297520661157024,
                     "CheckerTag.INCORRECT_LENGTH": 0.15358126721763085,
-                    "CheckerTag.CORRECT": 0.11363636363636363,
+                    "CheckerTag.CORRECT": 0.09710743801652892,
                     "Error parsing solution": 0.004132231404958678,
                     "Model says no solution exists": 0.004132231404958678
                 },
@@ -749,8 +749,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.011867200000000001,
                         "problem_name": "croatian-2022-1",
                         "variation_parameters": {
@@ -1528,8 +1528,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_FORMAT",
                         "cost": 0.0103496,
                         "problem_name": "imo-shortlist-2001-n6",
                         "variation_parameters": {
@@ -1558,8 +1558,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_FORMAT",
                         "cost": 0.0059328,
                         "problem_name": "imo-shortlist-2001-n6",
                         "variation_parameters": {
@@ -2709,8 +2709,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.012631200000000002,
                         "problem_name": "konhauser-2014-7",
                         "variation_parameters": {
@@ -2723,8 +2723,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.0070128000000000005,
                         "problem_name": "konhauser-2014-7",
                         "variation_parameters": {
@@ -2751,8 +2751,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.01012,
                         "problem_name": "konhauser-2014-7",
                         "variation_parameters": {
@@ -3481,8 +3481,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_FORMAT",
                         "cost": 0.0080384,
                         "problem_name": "swiss-2019-3",
                         "variation_parameters": {
@@ -3491,8 +3491,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_FORMAT",
                         "cost": 0.0229648,
                         "problem_name": "swiss-2019-3",
                         "variation_parameters": {
@@ -4334,14 +4334,14 @@
                 ]
             },
             "gpt-4o": {
-                "avg_acc": 0.12878787878787878,
+                "avg_acc": 0.1184573002754821,
                 "avg_cost": 14.53537,
                 "all_correct": 0.04132231404958678,
                 "error_types": {
-                    "CheckerTag.INCORRECT_FORMAT": 0.06611570247933884,
-                    "CheckerTag.INCORRECT_SOLUTION": 0.6811294765840221,
+                    "CheckerTag.INCORRECT_FORMAT": 0.06818181818181818,
+                    "CheckerTag.INCORRECT_SOLUTION": 0.6893939393939394,
                     "CheckerTag.INCORRECT_LENGTH": 0.11776859504132231,
-                    "CheckerTag.CORRECT": 0.12878787878787878,
+                    "CheckerTag.CORRECT": 0.1184573002754821,
                     "Error parsing solution": 0.006198347107438017
                 },
                 "detailed_results": [
@@ -4510,8 +4510,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.011555,
                         "problem_name": "bulgarian-ifym-2022-d1-p6-8th",
                         "variation_parameters": {
@@ -5553,8 +5553,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.0105075,
                         "problem_name": "emc-2022-2",
                         "variation_parameters": {
@@ -7736,8 +7736,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_FORMAT",
                         "cost": 0.0492325,
                         "problem_name": "serbian-2022-tst-3",
                         "variation_parameters": {
@@ -8608,8 +8608,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.009729999999999999,
                         "problem_name": "usamts-2001-4-4",
                         "variation_parameters": {
@@ -8617,8 +8617,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.014759999999999999,
                         "problem_name": "usamts-2001-4-4",
                         "variation_parameters": {
@@ -8664,12 +8664,12 @@
                 ]
             },
             "gpt-4o-mini": {
-                "avg_acc": 0.10812672176308541,
+                "avg_acc": 0.10192837465564739,
                 "avg_cost": 0.9068613,
                 "all_correct": 0.04132231404958678,
                 "error_types": {
-                    "CheckerTag.INCORRECT_SOLUTION": 0.6577134986225895,
-                    "CheckerTag.CORRECT": 0.10812672176308538,
+                    "CheckerTag.INCORRECT_SOLUTION": 0.6639118457300276,
+                    "CheckerTag.CORRECT": 0.10192837465564736,
                     "CheckerTag.INCORRECT_LENGTH": 0.16528925619834708,
                     "CheckerTag.INCORRECT_FORMAT": 0.06267217630853994,
                     "Model says no solution exists": 0.006198347107438016
@@ -12920,8 +12920,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.0012492,
                         "problem_name": "usamts-2001-4-4",
                         "variation_parameters": {
@@ -12938,8 +12938,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.0005660999999999999,
                         "problem_name": "usamts-2001-4-4",
                         "variation_parameters": {
@@ -12947,8 +12947,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.0010074,
                         "problem_name": "usamts-2001-4-4",
                         "variation_parameters": {
@@ -12994,13 +12994,13 @@
                 ]
             },
             "claude-3-5-sonnet-latest": {
-                "avg_acc": 0.1921487603305785,
+                "avg_acc": 0.18181818181818182,
                 "avg_cost": 25.224921,
-                "all_correct": 0.06611570247933884,
+                "all_correct": 0.05785123966942149,
                 "error_types": {
-                    "CheckerTag.INCORRECT_SOLUTION": 0.6026170798898072,
+                    "CheckerTag.INCORRECT_SOLUTION": 0.6129476584022039,
                     "Error parsing solution": 0.008264462809917356,
-                    "CheckerTag.CORRECT": 0.1921487603305785,
+                    "CheckerTag.CORRECT": 0.18181818181818182,
                     "CheckerTag.INCORRECT_LENGTH": 0.12603305785123967,
                     "CheckerTag.INCORRECT_FORMAT": 0.06887052341597795,
                     "Model says no solution exists": 0.002066115702479339
@@ -16610,8 +16610,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.054723,
                         "problem_name": "swiss-2023-5",
                         "variation_parameters": {}
@@ -16778,8 +16778,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.040847999999999995,
                         "problem_name": "tot-2005-1",
                         "variation_parameters": {

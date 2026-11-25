@@ -58,7 +58,7 @@ class Problem15(Problem):
             if len(x[i]) != 8:
                 return False, f"Row of size {len(x[i])}, should be 8", CheckerTag.INCORRECT_LENGTH
             for j in range(8):
-                if x[i][j] < 1 or x[i][j] > self.n:
+                if not isinstance(x[i][j], int) or x[i][j] < 1 or x[i][j] > self.n:
                     return False, f"Cell ({i}, {j}) has value {x[i][j]}, should be in the range [1, {self.n}]", CheckerTag.INCORRECT_FORMAT
         pairs = set()
         for j in range(8):
@@ -66,7 +66,7 @@ class Problem15(Problem):
                 return False, f"Box {j} has duplicate colors", CheckerTag.INCORRECT_SOLUTION
             for i1 in range(6):
                 for i2 in range(i1+1, 6):
-                    pairs.add((x[i1][j], x[i2][j]))
+                    pairs.add(tuple(sorted((x[i1][j], x[i2][j]))))
         if len(pairs) != 8 * 6 * 5 / 2:
             return False, f"There is a pair of colors that occur together in more than one box", CheckerTag.INCORRECT_SOLUTION
         return True, "OK", CheckerTag.CORRECT

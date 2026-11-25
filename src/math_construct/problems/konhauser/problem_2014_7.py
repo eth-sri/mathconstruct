@@ -50,9 +50,9 @@ class ProblemKonhauser20147(Problem):
         x, y = sol
         eq1 = self.a ** x - self.b ** y - self.c ** y
         eq2 = self.d ** x - self.e ** y - self.f ** y
-        if abs(eq1) > 0.001:
+        if abs(eq1) > 0.001 * min(1, max(self.a ** x, self.b ** y + self.c ** y)):
             return False, f"First equation is not satisfied with difference: {eq1}.", CheckerTag.INCORRECT_SOLUTION
-        if abs(eq2) > 0.001:
+        if abs(eq2) > 0.001 * min(1, max(self.d ** x, self.e ** y + self.f ** y)):
             return False, f"Second equation is not satisfied with difference: {eq2}.", CheckerTag.INCORRECT_SOLUTION
         return True, "OK", CheckerTag.CORRECT
         

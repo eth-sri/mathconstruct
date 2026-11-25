@@ -48,7 +48,7 @@ class ProblemEMC20161(Problem):
                 return False, f"Elements {i} and {i + 2} are not coprime", CheckerTag.INCORRECT_SOLUTION
         for r in range(self.n):
             for s in range(r, self.n):
-                if sympy.isprime(sum(x[r:s+1])):
+                if sum(x[r:s+1]) < 4 or sympy.isprime(sum(x[r:s+1])):
                     return False, f"Sum from {r} to {s} is not composite", CheckerTag.INCORRECT_SOLUTION
         return True, "OK", CheckerTag.CORRECT
 

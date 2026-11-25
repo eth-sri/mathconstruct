@@ -43,7 +43,7 @@ class ProblemBxMO20212(Problem):
         
     def check(self, a: list[list[int]]) -> bool:
         # check matrix is correct
-        checker_format = self.check_format(a, is_integer=True, is_square_matrix=True, min_val_inclusive=0, max_val_inclusive=1)
+        checker_format = self.check_format(a, is_integer=True, is_square_matrix=True, expected_length=self.n, min_val_inclusive=0, max_val_inclusive=1)
         if not checker_format[0]:
             return checker_format
         sum_pebbles = sum([sum(row) for row in a])

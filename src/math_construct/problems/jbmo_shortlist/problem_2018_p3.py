@@ -36,6 +36,8 @@ class ProblemJBMO2018A3(Problem):
             return False, f"Sequence should be of length {self.n}", CheckerTag.INCORRECT_LENGTH
         if 0 in x:
             return False, "Numbers should be non-zero", CheckerTag.INCORRECT_FORMAT
+        if len(set(x)) == 1:
+            return False, "Numbers should not all be equal", CheckerTag.INCORRECT_SOLUTION
         arr = np.array(x)
         # k = 2/self.n*np.sum(np.log(abs(arr)))
         # if abs(k-4) < 1e-5:

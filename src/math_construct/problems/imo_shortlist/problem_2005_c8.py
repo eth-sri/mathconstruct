@@ -68,9 +68,11 @@ class Problem2005C8(Problem):
             if len(dia) != 2:
                 return False, f"Diagonal {dia} is not a pair", CheckerTag.INCORRECT_FORMAT
             a, b = dia
+            if not (isinstance(a, int) and isinstance(b, int) and 1 <= a <= self.n and 1 <= b <= self.n):
+                return False, f"Diagonal {dia} has invalid vertex labels", CheckerTag.INCORRECT_FORMAT
             if (a-b+self.n)%self.n in [0, 1, self.n-1]:
                 return False, f"Diagonal {dia} is not a valid diagonal", CheckerTag.INCORRECT_FORMAT
-        all_dias_str = [str(x) for x in all_dias]
+        all_dias_str = [str(sorted(x)) for x in all_dias]
         if len(all_dias_str) != len(set(all_dias_str)):
             return False, f"Some diagonals are repeated", CheckerTag.INCORRECT_FORMAT
 

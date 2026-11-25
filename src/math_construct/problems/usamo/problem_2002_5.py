@@ -80,6 +80,8 @@ class Problem_USAMO_2002_5(Problem):
             return False, f"First element should be {self.a}, but it is {x[0]}", CheckerTag.INCORRECT_FORMAT
         if x[-1] != self.b:
             return False, f"Last element should be {self.b}, but it is {x[-1]}", CheckerTag.INCORRECT_FORMAT
+        if not all(y > 0 for y in x):
+            return False, "All elements should be positive integers", CheckerTag.INCORRECT_SOLUTION
         for i in range(len(x)-1):
             if x[i]*x[i+1] % (x[i] + x[i+1]) != 0:
                 return False, f"Product of {x[i]} and {x[i+1]} is not divisible by their sum: {x[i]*x[i+1]} is not divisible by {x[i] + x[i+1]}", CheckerTag.INCORRECT_SOLUTION

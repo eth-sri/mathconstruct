@@ -54,7 +54,7 @@ class ProblemSMO2013_4(Problem):
                 if x <= 0 or x > 3*self.n:
                     return False, f"{sol} has an element which is not in the set", CheckerTag.INCORRECT_FORMAT
                 uniques.add(x) 
-        if len(uniques) != 3*self.n:
+        if len(uniques) != 3*self.n or uniques != set(range(1, 3*self.n + 1)):
             return False, f"Triples are not disjoint", CheckerTag.INCORRECT_FORMAT
         
         # constraints

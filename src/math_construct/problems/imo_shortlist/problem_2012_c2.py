@@ -62,8 +62,8 @@ class Problem2012C2(Problem):
         elems = set()
         sums = set() 
         for a, b in solution: 
-            if a < 1 or a > self.n or b < 1 or b > self.n:
-                return False
+            if not (isinstance(a, int) and isinstance(b, int)) or a < 1 or a > self.n or b < 1 or b > self.n:
+                return False, f"Pair {[a, b]} must consist of integers in [1, n]", CheckerTag.INCORRECT_FORMAT
             elems.add(a)
             elems.add(b)
             s = a+b 

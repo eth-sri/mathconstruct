@@ -49,11 +49,13 @@ class Problem22(Problem):
         r, a = a[0], a[1:]
         if r <= 0:
             return False, f"r={r} is not positive", CheckerTag.INCORRECT_FORMAT
+        if any(a[i] >= a[i+1] for i in range(self.n-1)):
+            return False, "a must be strictly increasing", CheckerTag.INCORRECT_SOLUTION
         target_diffs = [r**i for i in range(1, self.n*(self.n-1)//2+1)]
         diffs = [a[j] - a[i] for i in range(self.n) for j in range(i+1, self.n)]
         diffs.sort()
         for i in range(len(diffs)):
-            if abs(diffs[i] - target_diffs[i]) > 1e-3:
+            if abs(diffs[i] - target_diffs[i]) > 1e-3 * min(1, target_diffs[i]):
                 return False, f"The arrays of differences are not equal at index {i}", CheckerTag.INCORRECT_SOLUTION
         return True, "OK", CheckerTag.CORRECT
 

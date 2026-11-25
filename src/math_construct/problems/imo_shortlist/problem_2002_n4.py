@@ -43,7 +43,7 @@ class Problem19(Problem):
             return False, f"List of size {len(solution)}, should be {self.k}", CheckerTag.INCORRECT_LENGTH
         # check if all are integers
         for s in solution:
-            if not all(isinstance(x, int) for x in s):
+            if not all(isinstance(x, int) and x > 0 for x in s):
                 return False, "All elements should be integers", CheckerTag.INCORRECT_FORMAT
         # check if all are unique
         if len(set(tuple(s) for s in solution)) != len(solution):

@@ -65,8 +65,8 @@ class Problem2016C4(Problem):
 
             for di, dj in [(1, 1), (1, -1), (-1, 1), (-1, -1)]:
                 for i in range(self.n):
-                    for start in [(i, 0), (0, i)]:
-                        if start[0]+di < 0 or start[1]+dj < 0:
+                    for start in [(i, 0), (0, i), (i, self.n-1), (self.n-1, i)]:
+                        if not (0 <= start[0]+di < self.n and 0 <= start[1]+dj < self.n):
                             continue
                         diag = get_diagonal(start[0], start[1], di, dj)
                         if len(diag)%3 == 0:

@@ -58,6 +58,8 @@ class ProblemBxMO20111(Problem):
         check_format = self.check_format([sol[0] for sol in sols], min_val_inclusive=2, max_val_inclusive=self.max_val)
         if not check_format[0]:
             return check_format
+        if any(not (sol[0] < sol[1]) for sol in sols):
+            return False, "Each pair must satisfy m < n", CheckerTag.INCORRECT_SOLUTION
         # sort sol by increasing n
         a.sort(key=lambda x: x[1])
         # check that n_i / n_{i-1} >= 4

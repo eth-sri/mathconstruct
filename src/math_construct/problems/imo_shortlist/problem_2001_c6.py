@@ -55,6 +55,8 @@ class Problem18(Problem):
             return False, f"List of size {len(S)}, which is larger than the required number", CheckerTag.INCORRECT_LENGTH
         if not all(isinstance(x, str) for x in S):
             return False, "All elements should be strings", CheckerTag.INCORRECT_FORMAT
+        if not all(len(x) == 2*self.n and set(x) <= {"0", "1"} and x.count("1") == self.n for x in S):
+            return False, "All elements should be balanced sequences", CheckerTag.INCORRECT_FORMAT
         # check if every balanced sequence is equal to or is a neighbor of at least one sequence in S
         found = set()
         for sub_str in S:

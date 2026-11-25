@@ -35,7 +35,7 @@ class ProblemSwiss20235(Problem):
         x = sympy.symbols("x")
         f_x_times_x = (1 + x) * sympy_expression + x # simple automatic check if this is constant
         simplified = sympy.simplify(f_x_times_x)
-        if simplified.free_symbols:
+        if simplified.free_symbols or simplified != 1:
             return False, "Function does not satisfy the inequality.", CheckerTag.INCORRECT_SOLUTION
         return True, "OK", CheckerTag.CORRECT
 

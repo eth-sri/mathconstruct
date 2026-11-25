@@ -42,6 +42,8 @@ class Problem2016A5(Problem):
     def check(self, f: Fraction) -> tuple[bool, str, CheckerTag]:
         if f.denominator <= 0 or (f.denominator-1)**2 > self.n:
             return False, f"Denominator {f.denominator} is not in the range [1, {math.sqrt(self.n)+1}]", CheckerTag.INCORRECT_SOLUTION
+        if f < 0:
+            return False, "Fraction must be >= sqrt(n) (non-negative)", CheckerTag.INCORRECT_SOLUTION
         if f**2 < self.n or f**2 > self.n + 1:
             return False, f"Fraction {f} is not in range [{math.sqrt(self.n)}, {math.sqrt(self.n+1)}]", CheckerTag.INCORRECT_SOLUTION
         return True, "OK", CheckerTag.CORRECT

@@ -78,7 +78,7 @@ class ProblemKonhauser20161(Problem):
                 return False, f"Time is larger than alloted time {float_time} for {row}.", CheckerTag.INCORRECT_SOLUTION
             if row[0] > current_time:
                 current_worms = [min(1, worm + (row[0] - current_time)) for worm in current_worms]
-            if not set(current_worms) == set(row[1]):
+            if not sorted(current_worms) == sorted(row[1]):
                 return False, f"Incorrect worm lengths before cut for {row}, expected {current_worms}.", CheckerTag.INCORRECT_SOLUTION
             if len(row[1]) != len(row[2]) - 1:
                 return False, f"Incorrect number of worms after cut for {row}.", CheckerTag.INCORRECT_SOLUTION
@@ -93,6 +93,8 @@ class ProblemKonhauser20161(Problem):
                     worms_row_2.remove(worm)
             if not len(worms_row_2) == 2:
                 return False, f"Incorrect number of worms after cut for {row}. Worms in cut: {worms_row_2}", CheckerTag.INCORRECT_SOLUTION
+            if not all(0 < w < 1 for w in worms_row_2):
+                return False, "Cut pieces must have lengths strictly between 0 and 1", CheckerTag.INCORRECT_SOLUTION
             if not sum(worms_row_2) == 1:
                 return False, f"Incorrect worm lengths after cut for {row}. {worms_row_2} does not sum to 1.", CheckerTag.INCORRECT_SOLUTION
             current_worms = row[2].copy()

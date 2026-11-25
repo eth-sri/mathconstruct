@@ -54,6 +54,8 @@ class Problem2010N1(Problem):
         if len(solution) != self.n:
             return False, f"List of size {len(solution)}, should be {self.n}", CheckerTag.INCORRECT_LENGTH
 
+        if not all(isinstance(s, int) and s > 0 for s in solution) or len(set(solution)) != len(solution):
+            return False, "Elements must be distinct positive integers", CheckerTag.INCORRECT_FORMAT
         # equality
         ret = Fraction(1)
         for s in solution:

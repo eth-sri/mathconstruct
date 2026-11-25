@@ -54,7 +54,7 @@ class Problem20(Problem):
     def check(self, solution: list[int]) -> bool:
         if len(solution) != self.p:
             return False, f"List of size {len(solution)}, should be {self.p}", CheckerTag.INCORRECT_LENGTH
-        if not all(isinstance(x, int) and x > 0 for x in solution):
+        if not all(isinstance(x, int) and 0 < x <= self.n for x in solution):
             return False, "All elements should be positive integers", CheckerTag.INCORRECT_FORMAT
         sums = set()
         for i in range(len(solution)):

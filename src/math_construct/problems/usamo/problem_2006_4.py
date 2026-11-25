@@ -47,6 +47,12 @@ class Problem_USAMO_2006_4(Problem):
     def check(self, a: list[int | Fraction]) -> tuple[bool, str, CheckerTag]:
         if not all(isinstance(y, int) or isinstance(y, Fraction) for y in a):
             return False, "All elements should be integers or fractions", CheckerTag.INCORRECT_FORMAT
+        if len(a) < 2:
+            return False, "At least two numbers are required", CheckerTag.INCORRECT_SOLUTION
+        if not all(y > 0 for y in a):
+            return False, "All numbers should be positive", CheckerTag.INCORRECT_SOLUTION
+        if sum(a) != self.n:
+            return False, f"Sum of the list is {sum(a)}, should be equal to {self.n}", CheckerTag.INCORRECT_SOLUTION
         if sum(a) != math.prod(a):
             return False, f"Sum of the list is {sum(a)}, should be equal to the product {math.prod(a)}", CheckerTag.INCORRECT_SOLUTION
         return True, "OK", CheckerTag.CORRECT

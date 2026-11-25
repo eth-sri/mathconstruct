@@ -44,6 +44,8 @@ class Problem_HMO_2018_4(Problem):
     def check(self, x: list[int]):
         if len(x) != self.n:
             return False, f"List does not have exactly {self.n} elements", CheckerTag.INCORRECT_LENGTH
+        if any(not isinstance(v, int) or isinstance(v, bool) for v in x):
+            return False, "All elements must be integers", CheckerTag.INCORRECT_FORMAT
         if any(x[i] <= 0 for i in range(self.n)):
             return False, f"All elements must be positive", CheckerTag.INCORRECT_FORMAT
         for i in range(self.n):

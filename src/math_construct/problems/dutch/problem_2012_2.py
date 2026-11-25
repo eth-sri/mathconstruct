@@ -43,6 +43,9 @@ class ProblemDutch20122(Problem):
         if not check_format[0]:
             return check_format
         # check validity matrix
+        for row in a:
+            if len(set(row)) != self.n:
+                return False, f"The row should contain the numbers 1 to {self.n}, but is not the case for {row}.", CheckerTag.INCORRECT_SOLUTION
         for i in range(self.n):
             column = [a[j][i] for j in range(self.n)]
             if len(set(column)) != self.n:

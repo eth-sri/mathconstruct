@@ -40,6 +40,8 @@ class ProblemSwissSelection20248(Problem):
         simplified = sympy.simplify(f_x_times_x)
         if simplified.free_symbols:
             return False, "Function does not satisfy the inequality.", CheckerTag.INCORRECT_SOLUTION
+        if simplified.is_positive is not True:
+            return False, "f must map R_{>0} to R_{>0}", CheckerTag.INCORRECT_SOLUTION
         return True, "OK", CheckerTag.CORRECT
 
     @classmethod

@@ -75,6 +75,8 @@ class ProblemSerbianTst2023_1(Problem):
         for p in solution:
             if len(p) != 2: 
                 return False, f"Pair {p} is not of size 2", CheckerTag.INCORRECT_FORMAT
+            if not all(isinstance(v, int) and 1 <= v <= self.n for v in p):
+                return False, f"Pair {p} has a vertex outside 1..n", CheckerTag.INCORRECT_FORMAT
             if p[0] == p[1]: 
                 return False, f"Pair {p} is a self edge, this is not allowed", CheckerTag.INCORRECT_FORMAT
             #insert into set 

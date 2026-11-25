@@ -51,6 +51,8 @@ class Problem_Putnam2023B2(Problem):
             return False, "All elements should be unique", CheckerTag.INCORRECT_FORMAT
         if not all(isinstance(y, int) for y in x):
             return False, "All elements should be integers", CheckerTag.INCORRECT_FORMAT
+        if not all(y > 0 for y in x):
+            return False, "All elements should be positive", CheckerTag.INCORRECT_FORMAT
         for n in x:
             if count_ones(2023*n) != 3:
                 return False, "Not 3 ones in binary representation", CheckerTag.INCORRECT_SOLUTION

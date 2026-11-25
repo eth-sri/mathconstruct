@@ -34,7 +34,9 @@ class Problem23(Problem):
 
     def check(self, solution: list[float]) -> bool:
         a, b, c, d = solution
-        if abs((a + c) * (b + d) - a * c - b * d) > 1e-3:
+        if min(a, b, c, d) <= 0:
+            return False, "a, b, c, d must be positive", CheckerTag.INCORRECT_SOLUTION
+        if abs((a + c) * (b + d) - a * c - b * d) > 1e-3 * min(1, a * c + b * d):
             return False, f"Equation (a+c)(b+d) = ac + bd is not satisfied", CheckerTag.INCORRECT_SOLUTION
         if abs(a / b + b / c + c / d + d / a - 8) > 1e-3:
             return False, f"Equation a/b + b/c + c/d + d/a = 8 is not satisfied", CheckerTag.INCORRECT_SOLUTION

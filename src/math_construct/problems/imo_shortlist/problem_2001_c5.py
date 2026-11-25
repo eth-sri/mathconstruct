@@ -46,6 +46,8 @@ class Problem17(Problem):
             return False, "All elements should be unique", CheckerTag.INCORRECT_FORMAT
 
         for seq in x:
+            if len(seq) == 0:
+                return False, "Sequences must be non-empty", CheckerTag.INCORRECT_FORMAT
             if not all(isinstance(i, int) for i in seq):
                 return False, "All elements should be integers", CheckerTag.INCORRECT_FORMAT
             for i in range(len(seq)):

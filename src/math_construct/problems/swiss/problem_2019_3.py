@@ -40,6 +40,14 @@ class ProblemSwiss20193(Problem):
         checker = self.check_format(a, expected_length=self.m, is_unique=True)
         if not checker[0]:
             return checker
+        if any(not isinstance(seq, list) or len(seq) == 0 or any(v <= 0 for v in seq) for seq in a):
+            return False, "Each sequence must be a non-empty list of positive reals.", CheckerTag.INCORRECT_FORMAT
+        def minimal_period(seq):
+            for p in range(1, len(seq) + 1):
+                if len(seq) % p == 0 and all(abs(seq[t] - seq[t % p]) < 1e-12 for t in range(len(seq))):
+                    return tuple(seq[:p])
+        if len(set(minimal_period(seq) for seq in a)) != len(a):
+            return False, "Sequences are not distinct.", CheckerTag.INCORRECT_FORMAT
         for i, seq in enumerate(a):
             for j in range(2, len(seq) + 2):
                 if abs(seq[j % len(seq)] - (1 / self.k) * (1 / seq[(j - 1)  % len(seq)] + seq[(j - 2) % len(seq)])) > 1e-8:

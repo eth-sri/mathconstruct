@@ -43,7 +43,7 @@ class ProblemIFYM_2015_P7_4_8(Problem):
             return False, f"Example contains {(len(x))} numbers instead of 4", CheckerTag.INCORRECT_LENGTH
         
         for i in x:
-            if abs(i) < self.n:
+            if abs(i) <= self.n:
                 return False, f"Each number should have an absolute value higher than {self.n}", CheckerTag.INCORRECT_SOLUTION
 
         if x[0]*x[1]*x[2] + x[0]*x[2]*x[3] + x[0]*x[1]*x[3] + x[1]*x[2]*x[3] != 1:

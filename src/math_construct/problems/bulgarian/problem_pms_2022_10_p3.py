@@ -50,6 +50,8 @@ class ProblemBulPMS2022P10_3(Problem):
         for _, entry in enumerate(x):
             if len(entry) != 2:
                 return False, f"Each element of the sequence should be a pair", CheckerTag.INCORRECT_FORMAT
+            if any(type(v) != int or v <= 0 for v in entry):
+                return False, "p and q must be natural numbers", CheckerTag.INCORRECT_FORMAT
             a1 = entry[0]-3*entry[1]
             a2 = entry[0]*(entry[0] - 1)//2 + 9*entry[1]*(entry[1] - 1)//2 - 3*entry[0]*entry[1]
 

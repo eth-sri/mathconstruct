@@ -4344,16 +4344,16 @@
                 ]
             },
             "meta-llama__Meta-Llama-3.1-8B-Instruct-Turbo-128K": {
-                "avg_acc": 0.014462809917355372,
+                "avg_acc": 0.012396694214876033,
                 "avg_cost": 5.637281,
                 "all_correct": 0.008264462809917356,
                 "error_types": {
-                    "CheckerTag.INCORRECT_SOLUTION": 0.4855371900826447,
+                    "CheckerTag.INCORRECT_SOLUTION": 0.487603305785124,
                     "CheckerTag.INCORRECT_FORMAT": 0.13636363636363635,
                     "CheckerTag.INCORRECT_LENGTH": 0.2892561983471074,
                     "No Boxed Answer": 0.05991735537190083,
                     "Error parsing solution": 0.006198347107438017,
-                    "CheckerTag.CORRECT": 0.014462809917355372,
+                    "CheckerTag.CORRECT": 0.012396694214876033,
                     "Model says no solution exists": 0.008264462809917356
                 },
                 "detailed_results": [
@@ -8223,8 +8223,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.000631,
                         "problem_name": "usamo-2001-1",
                         "variation_parameters": {
@@ -8685,14 +8685,14 @@
                 ]
             },
             "gpt-4o": {
-                "avg_acc": 0.045454545454545456,
+                "avg_acc": 0.04132231404958678,
                 "avg_cost": 4.331865,
                 "all_correct": 0.01652892561983471,
                 "error_types": {
-                    "CheckerTag.INCORRECT_SOLUTION": 0.7699724517906337,
+                    "CheckerTag.INCORRECT_SOLUTION": 0.7741046831955923,
                     "CheckerTag.INCORRECT_LENGTH": 0.10123966942148761,
                     "CheckerTag.INCORRECT_FORMAT": 0.06887052341597798,
-                    "CheckerTag.CORRECT": 0.04545454545454546,
+                    "CheckerTag.CORRECT": 0.041322314049586785,
                     "Error parsing solution": 0.010330578512396696,
                     "Model says no solution exists": 0.004132231404958678
                 },
@@ -8938,8 +8938,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.0073025,
                         "problem_name": "bulgarian-pms-10-4",
                         "variation_parameters": {
@@ -12978,8 +12978,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.0043475,
                         "problem_name": "usamts-2001-4-4",
                         "variation_parameters": {
@@ -17364,12 +17364,12 @@
                 ]
             },
             "o1-mini": {
-                "avg_acc": 0.2334710743801653,
+                "avg_acc": 0.22727272727272727,
                 "avg_cost": 50.807547,
                 "all_correct": 0.09090909090909091,
                 "error_types": {
-                    "CheckerTag.INCORRECT_SOLUTION": 0.493801652892562,
-                    "CheckerTag.CORRECT": 0.2334710743801653,
+                    "CheckerTag.INCORRECT_SOLUTION": 0.5,
+                    "CheckerTag.CORRECT": 0.22727272727272727,
                     "CheckerTag.INCORRECT_FORMAT": 0.0571625344352617,
                     "Model says no solution exists": 0.07644628099173553,
                     "Error parsing solution": 0.012396694214876033,
@@ -18575,8 +18575,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.228768,
                         "problem_name": "emc-2022-2",
                         "variation_parameters": {
@@ -18584,8 +18584,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.357297,
                         "problem_name": "emc-2022-2",
                         "variation_parameters": {
@@ -21657,8 +21657,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.030453,
                         "problem_name": "usamts-2001-4-4",
                         "variation_parameters": {
@@ -21704,17 +21704,17 @@
                 ]
             },
             "gemini-2.0-flash-thinking-exp": {
-                "avg_acc": 0.31611570247933884,
+                "avg_acc": 0.30785123966942146,
                 "avg_cost": 14.700312,
                 "all_correct": 0.1487603305785124,
                 "error_types": {
-                    "CheckerTag.INCORRECT_FORMAT": 0.05785123966942149,
-                    "CheckerTag.INCORRECT_SOLUTION": 0.5213498622589532,
-                    "CheckerTag.CORRECT": 0.31611570247933884,
-                    "Error parsing solution": 0.012396694214876033,
-                    "No Boxed Answer": 0.01584022038567493,
-                    "CheckerTag.INCORRECT_LENGTH": 0.06611570247933884,
-                    "Model says no solution exists": 0.010330578512396695
+                    "CheckerTag.INCORRECT_FORMAT": 0.05785123966942148,
+                    "CheckerTag.INCORRECT_SOLUTION": 0.5296143250688705,
+                    "CheckerTag.CORRECT": 0.30785123966942146,
+                    "Error parsing solution": 0.012396694214876032,
+                    "No Boxed Answer": 0.015840220385674928,
+                    "CheckerTag.INCORRECT_LENGTH": 0.06611570247933883,
+                    "Model says no solution exists": 0.010330578512396693
                 },
                 "detailed_results": [
                     {
@@ -22228,8 +22228,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.020264,
                         "problem_name": "bxmo-2020-4",
                         "variation_parameters": {
@@ -22460,8 +22460,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.017258,
                         "problem_name": "croatian-2022-1",
                         "variation_parameters": {
@@ -22916,8 +22916,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.032087,
                         "problem_name": "emc-2022-2",
                         "variation_parameters": {
@@ -25998,8 +25998,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.01335,
                         "problem_name": "usamts-2001-4-4",
                         "variation_parameters": {
@@ -30384,16 +30384,16 @@
                 ]
             },
             "Qwen__QwQ-32B-Preview": {
-                "avg_acc": 0.1446280991735537,
+                "avg_acc": 0.14049586776859505,
                 "avg_cost": 7.263348,
                 "all_correct": 0.06611570247933884,
                 "error_types": {
-                    "CheckerTag.INCORRECT_SOLUTION": 0.44628099173553726,
+                    "CheckerTag.INCORRECT_SOLUTION": 0.4504132231404959,
                     "Model says no solution exists": 0.12603305785123967,
                     "CheckerTag.INCORRECT_LENGTH": 0.13636363636363635,
                     "Error parsing solution": 0.0743801652892562,
                     "No Boxed Answer": 0.01859504132231405,
-                    "CheckerTag.CORRECT": 0.1446280991735537,
+                    "CheckerTag.CORRECT": 0.14049586776859505,
                     "CheckerTag.INCORRECT_FORMAT": 0.05371900826446281
                 },
                 "detailed_results": [
@@ -31587,8 +31587,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.0154548,
                         "problem_name": "emc-2022-2",
                         "variation_parameters": {
@@ -34678,8 +34678,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.0106656,
                         "problem_name": "usamts-2001-4-4",
                         "variation_parameters": {
@@ -39063,13 +39063,13 @@
                 ]
             },
             "claude-3-5-sonnet-latest": {
-                "avg_acc": 0.05647382920110192,
+                "avg_acc": 0.054407713498622584,
                 "avg_cost": 4.505226,
                 "all_correct": 0.01652892561983471,
                 "error_types": {
-                    "CheckerTag.INCORRECT_SOLUTION": 0.7899449035812672,
+                    "CheckerTag.INCORRECT_SOLUTION": 0.7920110192837465,
                     "CheckerTag.INCORRECT_FORMAT": 0.05853994490358126,
-                    "CheckerTag.CORRECT": 0.05647382920110192,
+                    "CheckerTag.CORRECT": 0.054407713498622584,
                     "CheckerTag.INCORRECT_LENGTH": 0.09090909090909091,
                     "No Boxed Answer": 0.004132231404958678
                 },
@@ -43355,8 +43355,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.009312,
                         "problem_name": "usamts-2001-4-4",
                         "variation_parameters": {
@@ -47743,14 +47743,14 @@
                 ]
             },
             "gemini-2.0-flash-exp": {
-                "avg_acc": 0.13016528925619836,
+                "avg_acc": 0.128099173553719,
                 "avg_cost": 1.199014,
                 "all_correct": 0.04132231404958678,
                 "error_types": {
                     "No Boxed Answer": 0.004132231404958678,
-                    "CheckerTag.INCORRECT_SOLUTION": 0.7066115702479339,
+                    "CheckerTag.INCORRECT_SOLUTION": 0.7086776859504132,
                     "CheckerTag.INCORRECT_LENGTH": 0.08057851239669421,
-                    "CheckerTag.CORRECT": 0.13016528925619836,
+                    "CheckerTag.CORRECT": 0.128099173553719,
                     "CheckerTag.INCORRECT_FORMAT": 0.05991735537190083,
                     "Error parsing solution": 0.006198347107438017,
                     "Model says no solution exists": 0.012396694214876033
@@ -52037,8 +52037,8 @@
                         }
                     },
                     {
-                        "correct": true,
-                        "error": "CheckerTag.CORRECT",
+                        "correct": false,
+                        "error": "CheckerTag.INCORRECT_SOLUTION",
                         "cost": 0.003624,
                         "problem_name": "usamts-2001-4-4",
                         "variation_parameters": {

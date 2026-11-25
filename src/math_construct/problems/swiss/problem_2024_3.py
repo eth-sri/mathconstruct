@@ -38,7 +38,7 @@ class ProblemSwiss20243(Problem):
         if not checker_format[0]:
             return checker_format
         a, b, c, d = a
-        if a * b ** 2 + a * c ** 2 < self.k * b * c * d - 1e-8:
+        if a * b ** 2 + a * c ** 2 < self.k * b * c * d - 1e-8 * min(1, self.k * b * c * d):
             return False, f"{a} * {b}^2 + {a} * {c}^2 < {self.k} * {b} * {c} * {d}", CheckerTag.INCORRECT_SOLUTION
         val = (a ** 2 + b ** 2 + c ** 2 + d ** 2) * (1 / a ** 2 + 1 / b ** 2 + 1 / c ** 2 + 1 / d ** 2) 
         if abs(val - self.min_val) > 1e-8:

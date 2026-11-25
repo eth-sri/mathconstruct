@@ -61,6 +61,8 @@ class Problem2009C2(Problem):
 
         # conditions 
         for triple in solution:
+            if not all(isinstance(v, int) and v >= 0 for v in triple):
+                return False, f"Triple {triple} must consist of nonnegative integers", CheckerTag.INCORRECT_FORMAT
             if sum(triple) != self.n:
                 return False, f"Sum of elements in triple {triple} is not {self.n}", CheckerTag.INCORRECT_SOLUTION
         for i in range(N):

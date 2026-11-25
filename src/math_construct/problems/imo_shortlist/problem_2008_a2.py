@@ -56,6 +56,8 @@ class Problem2008A2(Problem):
         for triple in solution:
             triple = [Fraction(x) for x in triple] # as types may not be unified
             x, y, z = triple
+            if x * y * z != 1:
+                return False, f"Triple {triple} does not satisfy xyz = 1", CheckerTag.INCORRECT_SOLUTION
             try:
                 lhs = x**2 / (x-1)**2 + y**2 / (y-1)**2 + z**2 / (z-1)**2 
             except ZeroDivisionError:

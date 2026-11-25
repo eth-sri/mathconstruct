@@ -51,7 +51,11 @@ class Problem2017N6(Problem):
     def check(self, a: list[list[Fraction]]):
         if len(a) != self.n:
             return False, f"List of size {len(a)}, should be {self.n}", CheckerTag.INCORRECT_LENGTH
+        if len(set(tuple(t) for t in a)) != len(a):
+            return False, "Triples are not different", CheckerTag.INCORRECT_SOLUTION
         for i, (x, y, z) in enumerate(a):
+            if not (x > 0 and y > 0 and z > 0):
+                return False, "Triple has non-positive entry", CheckerTag.INCORRECT_SOLUTION
             c = [x.numerator, x.denominator, y.numerator, y.denominator, z.numerator, z.denominator]
             if all(len(str(c[j])) < i+1 for j in range(6)):
                 return False, f"For i={i}, all of {x}, {y}, {z} have numerator and denominator with less than {i+1} digits", CheckerTag.INCORRECT_SOLUTION

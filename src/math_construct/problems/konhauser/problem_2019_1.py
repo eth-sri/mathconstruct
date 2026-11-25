@@ -81,6 +81,8 @@ class ProblemKonhauser20191(Problem):
                                          max_val_inclusive=13)
         if not check_format[0]:
             return check_format
+        if any(len(p) != 4 for p in sol):
+            return False, "Each project needs exactly four students.", CheckerTag.INCORRECT_SOLUTION
         assignments, perm = self.get_init_table()
         for k, val in assignments.items():
             if len(val) != len(sol[k - 1]):

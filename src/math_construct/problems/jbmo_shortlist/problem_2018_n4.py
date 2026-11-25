@@ -56,6 +56,8 @@ class ProblemJBMO2018N4(Problem):
         if len(set(x)) != len(x):
             return False, f"Elements of {x} are non-distinct", CheckerTag.INCORRECT_FORMAT
         for n in x:
+            if not isinstance(n, int) or n < 1:
+                return False, f"{n} is not a positive integer", CheckerTag.INCORRECT_FORMAT
             if (mod_exp(4, n, n**2+n+1) + mod_exp(2, n, n**2+n+1) + 1) % (n**2+n+1) != 0:
                 return False, f"Number {n} does not satisfy the property", CheckerTag.INCORRECT_SOLUTION
         return True, "OK", CheckerTag.CORRECT
